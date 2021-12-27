@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: /HoumingChen.github.io/sitemap.xml
+Sitemap: /https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/sitemap.xml
