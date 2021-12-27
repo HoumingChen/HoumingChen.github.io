@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>/</id>
   <title>Houming Chen</title>
-  <subtitle></subtitle>
-  <updated>2021-12-27T15:58:11-05:00</updated>
+  <subtitle>Math &amp; Computer Science student at the University of Michigan</subtitle>
+  <updated>2021-12-27T16:05:18-05:00</updated>
   <author>
     <name>Houming Chen</name>
     <uri>/</uri>
@@ -109,7 +109,7 @@
     <link href="/posts/First_blog/" rel="alternate" type="text/html" title="My First Blog" />
     <published>2021-12-27T04:17:00-05:00</published>
   
-    <updated>2021-12-27T15:42:58-05:00</updated>
+    <updated>2021-12-27T15:58:16-05:00</updated>
   
     <id>/posts/First_blog/</id>
     <content src="/posts/First_blog/" />
