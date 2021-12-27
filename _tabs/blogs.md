@@ -1,6 +1,6 @@
 ---
 layout: blogs
 title: Blogs
-icon: fas fa-tag
+icon: fas fa-book
 order: 5
 ---

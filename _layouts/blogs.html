@@ -12,38 +12,20 @@ layout: page
 
 <!-- Get pinned posts -->
 
-{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign pinned_num = pinned.size | minus: offset %}
 
-{% if pinned_num > 0 %}
-  {% for i in (offset..pinned.size) limit: pinned_num %}
-    {% assign posts = posts | push: pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_num = 0 %}
-{% endif %}
+{% assign pinned_size= pinned.size | minus: 1 %}
+{% assign default_size= default.size | minus: 1 %}
 
-
-<!-- Get default posts -->
-
-{% assign default_beg = offset | minus: pinned.size %}
-
-{% if default_beg < 0 %}
-  {% assign default_beg = 0 %}
-{% endif %}
-
-{% assign default_num = paginator.posts | size | minus: pinned_num  %}
-{% assign default_end = default_beg | plus: default_num | minus: 1 %}
-
-{% if default_num > 0 %}
-  {% for i in (default_beg..default_end) %}
-    {% assign posts = posts | push: default[i] %}
-  {% endfor %}
-{% endif %}
+{% for i in (0..pinned_size)%}
+{% assign posts = posts | push: pinned[i] %}
+{% endfor %}
+{% for i in (0..default_size)%}
+{% assign posts = posts | push: default[i] %}
+{% endfor %}
 
 <div id="post-list">
 
-{% for post in posts %}
+  {% for post in posts %}
 
   <div class="post-preview">
     <h1>
@@ -53,13 +35,13 @@ layout: page
     <div class="post-content">
       <p>
         {% include no-linenos.html content=post.content %}
-        {{ content | markdownify | strip_html | truncate: 200 }}
+        {{ content | markdownify | strip_html | truncate: 200 | escape }}
       </p>
     </div>
 
-    <div class="post-meta text-muted d-flex justify-content-between">
+    <div class="post-meta text-muted d-flex">
 
-      <div>
+      <div class="mr-auto">
         <!-- posted date -->
         <i class="far fa-calendar fa-fw"></i>
         {% include timeago.html date=post.date tooltip=true %}
@@ -68,12 +50,15 @@ layout: page
         <i class="far fa-clock fa-fw"></i>
         {% include read-time.html content=post.content %}
 
-        <!-- page views -->
-        {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
-        <i class="far fa-eye fa-fw"></i>
-        <span id="pv_{{-post.title-}}" class="pageviews">
-          <i class="fas fa-spinner fa-spin fa-fw"></i>
-        </span>
+        <!-- categories -->
+        {% if post.categories.size > 0 %}
+        <i class="far fa-folder-open fa-fw"></i>
+        <span>
+          {% for category in post.categories %}
+            {{ category }}
+            {%- unless forloop.last -%},{%- endunless -%}
+          {% endfor %}
+          </span>
         {% endif %}
       </div>
 
@@ -88,10 +73,10 @@ layout: page
 
   </div> <!-- .post-review -->
 
-{% endfor %}
+  {% endfor %}
 
 </div> <!-- #post-list -->
 
 {% if paginator.total_pages > 0 %}
-  {% include post-paginator.html %}
+{% include post-paginator.html %}
 {% endif %}

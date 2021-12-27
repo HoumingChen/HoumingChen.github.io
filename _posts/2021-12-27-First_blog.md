@@ -3,6 +3,7 @@ title: My First Blog
 date: 2021-12-27 4:17:00 +/-0000
 categories: [Blog]
 tags: [Blog]
+pin: false
 ---
 
 This is my first blog. Just want to see if this website works.
