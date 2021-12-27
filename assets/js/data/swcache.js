@@ -1,43 +1,43 @@
 const resource = [
 
   /* --- CSS --- */
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/css/style.css',
+  '/assets/css/style.css',
 
   /* --- JavaScripts --- */
   
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/js/dist/home.min.js',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/js/dist/page.min.js',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/js/dist/post.min.js',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/js/dist/categories.min.js',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/js/data/search.json',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/app.js',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/sw.js',
+  '/assets/js/dist/home.min.js',
+  '/assets/js/dist/page.min.js',
+  '/assets/js/dist/post.min.js',
+  '/assets/js/dist/categories.min.js',
+  '/assets/js/data/search.json',
+  '/app.js',
+  '/sw.js',
 
   /* --- HTML --- */
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/index.html',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/404.html',
+  '/index.html',
+  '/404.html',
   
-    '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/categories/',
+    '/categories/',
   
-    '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/tags/',
+    '/tags/',
   
-    '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/archives/',
+    '/archives/',
   
-    '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/about/',
+    '/about/',
   
 
   /* --- Favicons --- */
   
 
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/android-chrome-192x192.png',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/android-chrome-512x512.png',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/apple-touch-icon.png',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/favicon-16x16.png',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/favicon-32x32.png',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/favicon.ico',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/mstile-150x150.png',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/site.webmanifest',
-  '/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/img/favicons/browserconfig.xml'
+  '/assets/img/favicons/android-chrome-192x192.png',
+  '/assets/img/favicons/android-chrome-512x512.png',
+  '/assets/img/favicons/apple-touch-icon.png',
+  '/assets/img/favicons/favicon-16x16.png',
+  '/assets/img/favicons/favicon-32x32.png',
+  '/assets/img/favicons/favicon.ico',
+  '/assets/img/favicons/mstile-150x150.png',
+  '/assets/img/favicons/site.webmanifest',
+  '/assets/img/favicons/browserconfig.xml'
 
 ];
 

@@ -1,6 +1,6 @@
-self.importScripts('/https://github.com/HoumingChen/HoumingChen.github.io/tree/gh-pages/assets/js/data/swcache.js');
+self.importScripts('/assets/js/data/swcache.js');
 
-const cacheName = 'chirpy-20211227.1619';
+const cacheName = 'chirpy-20211227.1623';
 
 function verifyDomain(url) {
   for (const domain of allowedDomains) {
