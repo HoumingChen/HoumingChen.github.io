@@ -1,82 +1,110 @@
 ---
 layout: page
-# The Home page layout
+# All the Categories of posts
 ---
 
 {% include lang.html %}
 
-{% assign pinned = site.posts | where: "pin", "true" %}
-{% assign default = site.posts | where_exp: "item", "item.pin != true" %}
 
-{% assign posts = "" | split: "" %}
+{% include lang.html %}
 
-<!-- Get pinned posts -->
+{% assign HEAD_PREFIX = "h_" %}
+{% assign LIST_PREFIX = "l_" %}
+
+{% assign group_index = 0 %}
+
+{% assign sort_categories = site.categories | sort %}
+
+{% for category in sort_categories %}
+  {% assign category_name = category | first %}
+
+  {% if category_name == "Blogs" %}
 
 
-{% assign pinned_size= pinned.size | minus: 1 %}
-{% assign default_size= default.size | minus: 1 %}
+    {% assign posts_of_category = category | last %}
+    {% assign first_post = posts_of_category | first %}
 
-{% for i in (0..pinned_size)%}
-{% assign posts = posts | push: pinned[i] %}
-{% endfor %}
-{% for i in (0..default_size)%}
-{% assign posts = posts | push: default[i] %}
-{% endfor %}
+    {% if category_name == first_post.categories[0] %}
+      {% assign sub_categories = "" | split: "" %}
 
-<div id="post-list">
-
-  {% for post in posts %}
-
-  <div class="post-preview">
-    <h1>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        {% include no-linenos.html content=post.content %}
-        {{ content | markdownify | strip_html | truncate: 200 | escape }}
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-
-      <div class="mr-auto">
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        {% include timeago.html date=post.date tooltip=true %}
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        {% include read-time.html content=post.content %}
-
-        <!-- categories -->
-        {% if post.categories.size > 0 %}
-        <i class="far fa-folder-open fa-fw"></i>
-        <span>
-          {% for category in post.categories %}
-            {{ category }}
-            {%- unless forloop.last -%},{%- endunless -%}
-          {% endfor %}
-          </span>
+      {% for post in posts_of_category %}
+        {% assign second_category = post.categories[1] %}
+        {% if second_category %}
+          {% unless sub_categories contains second_category %}
+            {% assign sub_categories = sub_categories | push: second_category %}
+          {% endunless %}
         {% endif %}
-      </div>
+      {% endfor %}
 
-      {% if post.pin %}
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
+      {% assign sub_categories = sub_categories | sort %}
+      {% assign sub_categories_size = sub_categories | size %}
+
+    <div class="card categories">
+      <!-- top-category -->
+      <div id="{{ HEAD_PREFIX }}{{ group_index }}"
+        class="card-header d-flex justify-content-between hide-border-bottom">
+        <span>
+          <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
+
+          {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
+          <a href="{{ _category_url | relative_url }}" class="ml-1 mr-2">{{ category_name }}</a>
+
+          <!-- content count -->
+          {% assign top_posts_size = site.categories[category_name] | size %}
+          <span class="text-muted small font-weight-light">
+            {% if sub_categories_size > 0 %}
+              {{ sub_categories_size }}
+              {{ site.data.locales[lang].categories.category_measure }},
+            {% endif %}
+              {{ top_posts_size }}
+              {{ site.data.locales[lang].categories.post_measure }}
+          </span>
+        </span>
+
+        <!-- arrow -->
+        {% if sub_categories_size > 0%}
+        <a href="#{{ LIST_PREFIX }}{{ group_index }}" data-toggle="collapse"
+          aria-expanded="true" aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
+          class="category-trigger hide-border-bottom">
+          <i class="fas fa-fw fa-angle-down"></i>
+        </a>
+        {% else %}
+        <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+          <i class="fas fa-fw fa-angle-right"></i>
+        </span>
+        {% endif %}
+
+      </div> <!-- .card-header -->
+
+      <!-- Sub-categories -->
+      {% if sub_categories_size > 0 %}
+      <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
+        <ul class="list-group">
+          {% for sub_category in sub_categories %}
+          <li class="list-group-item">
+            <i class="far fa-folder fa-fw"></i>
+
+            {% capture _sub_ctg_url %}/categories/{{ sub_category | slugify | url_encode }}/{% endcapture %}
+            <a href="{{ _sub_ctg_url | relative_url }}" class="ml-1 mr-2">{{ sub_category }}</a>
+
+            {% assign posts_size = site.categories[sub_category] | size %}
+            <span class="text-muted small font-weight-light">
+              {{ posts_size }}
+              {{ site.data.locales[lang].categories.post_measure }}
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
       {% endif %}
 
-    </div> <!-- .post-meta -->
+    </div> <!-- .card -->
 
-  </div> <!-- .post-review -->
+      {% assign group_index = group_index | plus: 1 %}
 
-  {% endfor %}
+    {% endif %}
 
-</div> <!-- #post-list -->
+  {% endif %}
 
-{% if paginator.total_pages > 0 %}
-{% include post-paginator.html %}
-{% endif %}
+
+{% endfor %}
