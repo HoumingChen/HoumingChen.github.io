@@ -1,4 +1,19 @@
 [
   
+  {
+    "title": "My First Blog",
+    "url": "/posts/First_blog/",
+    "categories": "Blog",
+    "tags": "Blog",
+    "date": "2021-12-27 04:17:00 -0500",
+    
+
+
+
+
+
+    "snippet": "This is my first blog. Just want to see if this website works.This website is build by Jekyll with the chirpy theme (https://github.com/cotes2020/jekyll-theme-chirpy)."
+  }
+  
 ]
 
