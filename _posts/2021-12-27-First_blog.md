@@ -1,8 +1,8 @@
 ---
 title: My First Blog
 date: 2021-12-27 4:17:00 +/-0000
-categories: [Blog]
-tags: [Blog]
+categories: [Blogs]
+tags: [blog]
 pin: false
 ---
 
