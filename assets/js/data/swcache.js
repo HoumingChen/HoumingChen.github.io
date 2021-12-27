@@ -19,6 +19,14 @@ const resource = [
   
     '/about/',
   
+    '/categories/',
+  
+    '/tags/',
+  
+    '/archives/',
+  
+    '/blogs/',
+  
 
   /* --- Favicons --- */
   

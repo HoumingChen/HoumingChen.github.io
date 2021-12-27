@@ -8,8 +8,6 @@
 
 <html lang="en" 
   
-    mode="light"
-  
 >
 
   <!--
@@ -161,6 +159,42 @@
       </a>
     </li> <!-- .nav-item -->
     
+    <li class="nav-item">
+      <a href="/categories/" class="nav-link">
+        <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
+        <span>CATEGORIES</span>
+      </a>
+    </li> <!-- .nav-item -->
+    
+    <li class="nav-item">
+      <a href="/tags/" class="nav-link">
+        <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
+        <span>TAGS</span>
+      </a>
+    </li> <!-- .nav-item -->
+    
+    <li class="nav-item">
+      <a href="/archives/" class="nav-link">
+        <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
+        <span>ARCHIVES</span>
+      </a>
+    </li> <!-- .nav-item -->
+    
+    <li class="nav-item">
+      <a href="/blogs/" class="nav-link">
+        <i class="fa-fw fas fa-book ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
+        <span>BLOGS</span>
+      </a>
+    </li> <!-- .nav-item -->
+    
 
   </ul> <!-- ul.nav.flex-column -->
 
@@ -171,7 +205,7 @@
 
       
       <a href="https://github.com/HoumingChen" aria-label="github"
-        
+        class="order-3"
         target="_blank" rel="noopener">
         <i class="fab fa-github"></i>
       </a>
@@ -182,7 +216,7 @@
 
       
       <a href="https://twitter.com/houming_chen" aria-label="twitter"
-        
+        class="order-4"
         target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -194,7 +228,7 @@
       
       <a href="
           javascript:location.href = 'mailto:' + ['houmingc','umich.edu'].join('@')" aria-label="email"
-        
+        class="order-5"
         >
         <i class="fas fa-envelope"></i>
       </a>
@@ -205,7 +239,7 @@
 
       
       <a href="https://www.linkedin.com/in/houming-chen-51a4a1195/" aria-label="linkedin"
-        
+        class="order-6"
         target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i>
       </a>
@@ -213,6 +247,159 @@
 
     
 
+    
+      
+        <span class="icon-border order-2"></span>
+      
+
+      <span id="mode-toggle-wrapper" class="order-1">
+        <!--
+  Switch the mode between dark and light.
+-->
+
+<i class="mode-toggle fas fa-adjust"></i>
+
+<script type="text/javascript">
+
+  class ModeToggle {
+    static get MODE_KEY() { return "mode"; }
+    static get DARK_MODE() { return "dark"; }
+    static get LIGHT_MODE() { return "light"; }
+
+    constructor() {
+      if (this.hasMode) {
+        if (this.isDarkMode) {
+          if (!this.isSysDarkPrefer) {
+            this.setDark();
+          }
+        } else {
+          if (this.isSysDarkPrefer) {
+            this.setLight();
+          }
+        }
+      }
+
+      var self = this;
+
+      /* always follow the system prefers */
+      this.sysDarkPrefers.addListener(function() {
+        if (self.hasMode) {
+          if (self.isDarkMode) {
+            if (!self.isSysDarkPrefer) {
+              self.setDark();
+            }
+
+          } else {
+            if (self.isSysDarkPrefer) {
+              self.setLight();
+            }
+          }
+
+          self.clearMode();
+        }
+
+        self.updateMermaid();
+      });
+
+    } /* constructor() */
+
+
+    setDark() {
+      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+    }
+
+    setLight() {
+      $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+    }
+
+    clearMode() {
+      $('html').removeAttr(ModeToggle.MODE_KEY);
+      sessionStorage.removeItem(ModeToggle.MODE_KEY);
+    }
+
+    get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); }
+
+    get isSysDarkPrefer() { return this.sysDarkPrefers.matches; }
+
+    get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; }
+
+    get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; }
+
+    get hasMode() { return this.mode != null; }
+
+    get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
+
+    /* get the current mode on screen */
+    get modeStatus() {
+      if (this.isDarkMode
+        || (!this.hasMode && this.isSysDarkPrefer) ) {
+        return ModeToggle.DARK_MODE;
+      } else {
+        return ModeToggle.LIGHT_MODE;
+      }
+    }
+
+    updateMermaid() {
+      if (typeof mermaid !== "undefined") {
+        let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default");
+        let config = { theme: expectedTheme };
+
+        /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
+        $(".mermaid").each(function() {
+          let svgCode = $(this).prev().children().html();
+          $(this).removeAttr("data-processed");
+          $(this).html(svgCode);
+        });
+
+        mermaid.initialize(config);
+        mermaid.init(undefined, ".mermaid");
+      }
+    }
+
+    flipMode() {
+      if (this.hasMode) {
+        if (this.isSysDarkPrefer) {
+          if (this.isLightMode) {
+            this.clearMode();
+          } else {
+            this.setLight();
+          }
+
+        } else {
+          if (this.isDarkMode) {
+            this.clearMode();
+          } else {
+            this.setDark();
+          }
+        }
+
+      } else {
+        if (this.isSysDarkPrefer) {
+          this.setLight();
+        } else {
+          this.setDark();
+        }
+      }
+
+      this.updateMermaid();
+
+    } /* flipMode() */
+
+  } /* ModeToggle */
+
+  let toggle = new ModeToggle();
+
+  $(".mode-toggle").click(function() {
+
+    toggle.flipMode();
+
+  });
+
+</script>
+
+      </span>
     
 
   </div> <!-- .sidebar-bottom -->
@@ -552,6 +739,156 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
 
 
   
@@ -561,7 +898,22 @@
 
       
         
+        <a class="post-tag" href="/tags/archieve/">archieve</a>
+      
+        
+        <a class="post-tag" href="/tags/awards/">awards</a>
+      
+        
         <a class="post-tag" href="/tags/blog/">Blog</a>
+      
+        
+        <a class="post-tag" href="/tags/certificate/">certificate</a>
+      
+        
+        <a class="post-tag" href="/tags/competition/">competition</a>
+      
+        
+        <a class="post-tag" href="/tags/transcript/">transcript</a>
       
 
       </div>
@@ -603,6 +955,32 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
 
 
@@ -618,11 +996,115 @@
   
     
     
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+      
+    
+  
+    
+    
   
 
 
 
 
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/unofficial_transcripts/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+
+<span class="timeago small"
+  >Dec 27<i class="unloaded">2021-12-27T14:55:00-05:00</i>
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Unofficial Transcripts</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+  Unofficial transcripts(pdf)
+  University of Michigan - Ann Arbor (2020 Fall - current)
+  Grade/GPA Scale: A+(4.0) A(3.5) A-(3.7 ) B+(3.3) B(3.0) B-(2.7) C+(2.3) C(2.0) C-(1.7) D+(1.3) D(1) D-(0....
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/icpc_certificate/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+
+<span class="timeago small"
+  >Dec 27<i class="unloaded">2021-12-27T13:32:00-05:00</i>
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>ICPC 2019 North Central NA Regional Contest Certificates</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+
+
+
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
 
 
 
@@ -639,10 +1121,10 @@
   
 
   
-  <span class="btn btn-outline-primary disabled"
+  <a href="/posts/icpc_certificate/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>-</p>
-  </span>
+    <p>ICPC 2019 North Central NA Regional Contest Certificates</p>
+  </a>
   
 
 </div>
@@ -785,11 +1267,176 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
 
 
       
         
+        <a class="post-tag" href="/tags/archieve/">archieve</a>
+      
+        
+        <a class="post-tag" href="/tags/awards/">awards</a>
+      
+        
         <a class="post-tag" href="/tags/blog/">Blog</a>
+      
+        
+        <a class="post-tag" href="/tags/certificate/">certificate</a>
+      
+        
+        <a class="post-tag" href="/tags/competition/">competition</a>
+      
+        
+        <a class="post-tag" href="/tags/transcript/">transcript</a>
       
 
     </div>
