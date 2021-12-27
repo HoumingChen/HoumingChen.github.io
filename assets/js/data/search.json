@@ -12,7 +12,7 @@
 
 
 
-    "snippet": "  Unofficial transcripts(pdf)  University of Michigan - Ann Arbor (2020 Fall - current)  Grade/GPA Scale: A+(4.0) A(3.5) A-(3.7 ) B+(3.3) B(3.0) B-(2.7) C+(2.3) C(2.0) C-(1.7) D+(1.3) D(1) D-(0.7) E(0.0) |        Computing Your Grade Point Average - College of LSA        University of Wisconsin - Madison (2019 Fall - 2020 Summer)  Grade/GPA Scale: A(4) AB(3.5) B(3) BC(2.5) C(2) D(1) F(0) |        Grades and GPA - Office of the Registrar    "
+    "snippet": "  Unofficial transcripts(pdf)  University of Michigan - Ann Arbor (2020 Fall - current)  GPA:4.0/4.0  Grade/GPA Scale: A+(4.0) A(3.5) A-(3.7 ) B+(3.3) B(3.0) B-(2.7) C+(2.3) C(2.0) C-(1.7) D+(1.3) D(1) D-(0.7) E(0.0) |        Computing Your Grade Point Average - College of LSA        University of Wisconsin - Madison (2019 Fall - 2020 Summer)  GPA:4.0/4.0  Grade/GPA Scale: A(4) AB(3.5) B(3) BC(2.5) C(2) D(1) F(0) |        Grades and GPA - Office of the Registrar    "
   },
   
   {
@@ -33,8 +33,8 @@
   {
     "title": "My First Blog",
     "url": "/posts/First_blog/",
-    "categories": "Blog",
-    "tags": "Blog",
+    "categories": "Blogs",
+    "tags": "blog",
     "date": "2021-12-27 04:17:00 -0500",
     
 
