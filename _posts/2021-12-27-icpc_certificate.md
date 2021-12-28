@@ -1,7 +1,7 @@
 ---
 title: ICPC 2019 North Central NA Regional Contest Certificates
 date: 2021-12-27 13:32:00 +/-0000
-categories: [Awards, Competition]
+categories: [Site, Awards]
 tags: [awards, certificate, archieve, competition]
 pin: false
 ---

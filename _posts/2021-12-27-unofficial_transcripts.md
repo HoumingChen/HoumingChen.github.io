@@ -1,7 +1,7 @@
 ---
 title: Unofficial Transcripts
 date: 2021-12-27 14:55:00 +/-0000
-categories: [Transcripts]
+categories: [Site, Transcripts]
 tags: [transcript]
 pin: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: Wechat QRcode
 date: 2021-12-27 17:51:43 +/-3870
-categories: [Contacts]
+categories: [Site, Contacts]
 tags: [contact]
 pin: false
 comments: false
