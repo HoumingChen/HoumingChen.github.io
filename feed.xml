@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Houming Chen</title>
   <subtitle>Math &amp; Computer Science student at the University of Michigan</subtitle>
-  <updated>2021-12-27T20:06:05-05:00</updated>
+  <updated>2021-12-28T03:46:06-05:00</updated>
   <author>
     <name>Houming Chen</name>
     <uri>/</uri>
@@ -20,11 +20,54 @@
 
   
   <entry>
+    <title>Bert Tutorial</title>
+    <link href="/posts/Bert_tutorial/" rel="alternate" type="text/html" title="Bert Tutorial" />
+    <published>2021-12-28T01:03:16-05:00</published>
+  
+    <updated>2021-12-28T01:03:16-05:00</updated>
+  
+    <id>/posts/Bert_tutorial/</id>
+    <content src="/posts/Bert_tutorial/" />
+    <author>
+      <name>Houming Chen</name>
+    </author>
+
+  
+    
+    <category term="Blogs" />
+    
+    <category term="Machine Learning &amp; Data Science" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      UMICH ONLY
+
+Please note: Since this tutorial contains access to a dataset that is not released yet, PLEASE DON’T SHARE THIS COLAB TO ANYONE OUTSIDE UMICH!!!
+
+Tutorial link:
+
+ link 
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Online Resume</title>
     <link href="/posts/Online_Resume/" rel="alternate" type="text/html" title="Online Resume" />
     <published>2021-12-27T19:45:36-05:00</published>
   
-    <updated>2021-12-27T19:45:36-05:00</updated>
+    <updated>2021-12-27T20:20:17-05:00</updated>
   
     <id>/posts/Online_Resume/</id>
     <content src="/posts/Online_Resume/" />
@@ -61,7 +104,7 @@
     <link href="/posts/Wechat_QRcode/" rel="alternate" type="text/html" title="Wechat QRcode" />
     <published>2021-12-27T17:51:43-05:00</published>
   
-    <updated>2021-12-27T17:51:43-05:00</updated>
+    <updated>2021-12-27T20:20:17-05:00</updated>
   
     <id>/posts/Wechat_QRcode/</id>
     <content src="/posts/Wechat_QRcode/" />
@@ -98,7 +141,7 @@
     <link href="/posts/unofficial_transcripts/" rel="alternate" type="text/html" title="Unofficial Transcripts" />
     <published>2021-12-27T14:55:00-05:00</published>
   
-    <updated>2021-12-27T15:42:58-05:00</updated>
+    <updated>2021-12-28T00:39:29-05:00</updated>
   
     <id>/posts/unofficial_transcripts/</id>
     <content src="/posts/unofficial_transcripts/" />
@@ -124,7 +167,7 @@
 
       
   Unofficial transcripts(pdf)
-  University of Michigan - Ann Arbor (2020 Fall - current)
+  Transcript of Houming Chen: University of Michigan - Ann Arbor (2020 Fall - current)
   GPA:4.0/4.0
   Grade/GPA Scale: A+(4.0) A(3.5) A-(3.7 ) B+(3.3) B(3.0) B-(2.7) C+(2.3) C(2.0) C-(1.7) D+(1.3) D(1) D-(0.7) E(0.0) |
   
@@ -132,9 +175,7 @@
   
   
   
-  University of Wisconsin - Madison (2019 Fall - 2020 Summer)
-  GPA:4.0/4.0
-  Grade/GPA Scale: A(4) AB(3...
+  Transcript of Houming Chen: University of Wisconsin - Madison (2019 Fall -...
     </summary>
   
 
@@ -146,7 +187,7 @@
     <link href="/posts/icpc_certificate/" rel="alternate" type="text/html" title="ICPC 2019 North Central NA Regional Contest Certificates" />
     <published>2021-12-27T13:32:00-05:00</published>
   
-    <updated>2021-12-27T13:32:00-05:00</updated>
+    <updated>2021-12-27T20:20:17-05:00</updated>
   
     <id>/posts/icpc_certificate/</id>
     <content src="/posts/icpc_certificate/" />
@@ -173,45 +214,6 @@
       
 
 
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>My First Blog</title>
-    <link href="/posts/First_blog/" rel="alternate" type="text/html" title="My First Blog" />
-    <published>2021-12-27T04:17:00-05:00</published>
-  
-    <updated>2021-12-27T18:01:07-05:00</updated>
-  
-    <id>/posts/First_blog/</id>
-    <content src="/posts/First_blog/" />
-    <author>
-      <name>Houming Chen</name>
-    </author>
-
-  
-    
-    <category term="Blogs" />
-    
-    <category term="other" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This is my first blog. Just want to see if this website works.
-
-This website is build by Jekyll with the chirpy theme (https://github.com/cotes2020/jekyll-theme-chirpy).
 
     </summary>
   
