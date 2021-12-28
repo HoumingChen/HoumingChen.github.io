@@ -1,9 +1,39 @@
 [
   
   {
+    "title": "Online Resume",
+    "url": "/posts/Online_Resume/",
+    "categories": "Site, Resume",
+    "tags": "resume",
+    "date": "2021-12-27 19:45:36 -0500",
+    
+
+
+
+
+
+    "snippet": ""
+  },
+  
+  {
+    "title": "Wechat QRcode",
+    "url": "/posts/Wechat_QRcode/",
+    "categories": "Site, Contacts",
+    "tags": "contact",
+    "date": "2021-12-27 17:51:43 -0500",
+    
+
+
+
+
+
+    "snippet": ""
+  },
+  
+  {
     "title": "Unofficial Transcripts",
     "url": "/posts/unofficial_transcripts/",
-    "categories": "Transcripts",
+    "categories": "Site, Transcripts",
     "tags": "transcript",
     "date": "2021-12-27 14:55:00 -0500",
     
@@ -18,7 +48,7 @@
   {
     "title": "ICPC 2019 North Central NA Regional Contest Certificates",
     "url": "/posts/icpc_certificate/",
-    "categories": "Awards, Competition",
+    "categories": "Site, Awards",
     "tags": "awards, certificate, archieve, competition",
     "date": "2021-12-27 13:32:00 -0500",
     
@@ -33,7 +63,7 @@
   {
     "title": "My First Blog",
     "url": "/posts/First_blog/",
-    "categories": "Blogs",
+    "categories": "Blogs, other",
     "tags": "blog",
     "date": "2021-12-27 04:17:00 -0500",
     

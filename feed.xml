@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Houming Chen</title>
   <subtitle>Math &amp; Computer Science student at the University of Michigan</subtitle>
-  <updated>2021-12-27T16:22:18-05:00</updated>
+  <updated>2021-12-27T20:06:05-05:00</updated>
   <author>
     <name>Houming Chen</name>
     <uri>/</uri>
@@ -17,6 +17,80 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Online Resume</title>
+    <link href="/posts/Online_Resume/" rel="alternate" type="text/html" title="Online Resume" />
+    <published>2021-12-27T19:45:36-05:00</published>
+  
+    <updated>2021-12-27T19:45:36-05:00</updated>
+  
+    <id>/posts/Online_Resume/</id>
+    <content src="/posts/Online_Resume/" />
+    <author>
+      <name>Houming Chen</name>
+    </author>
+
+  
+    
+    <category term="Site" />
+    
+    <category term="Resume" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Wechat QRcode</title>
+    <link href="/posts/Wechat_QRcode/" rel="alternate" type="text/html" title="Wechat QRcode" />
+    <published>2021-12-27T17:51:43-05:00</published>
+  
+    <updated>2021-12-27T17:51:43-05:00</updated>
+  
+    <id>/posts/Wechat_QRcode/</id>
+    <content src="/posts/Wechat_QRcode/" />
+    <author>
+      <name>Houming Chen</name>
+    </author>
+
+  
+    
+    <category term="Site" />
+    
+    <category term="Contacts" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -33,6 +107,8 @@
     </author>
 
   
+    
+    <category term="Site" />
     
     <category term="Transcripts" />
     
@@ -80,9 +156,9 @@
 
   
     
-    <category term="Awards" />
+    <category term="Site" />
     
-    <category term="Competition" />
+    <category term="Awards" />
     
   
 
@@ -109,7 +185,7 @@
     <link href="/posts/First_blog/" rel="alternate" type="text/html" title="My First Blog" />
     <published>2021-12-27T04:17:00-05:00</published>
   
-    <updated>2021-12-27T15:58:16-05:00</updated>
+    <updated>2021-12-27T18:01:07-05:00</updated>
   
     <id>/posts/First_blog/</id>
     <content src="/posts/First_blog/" />
@@ -120,6 +196,8 @@
   
     
     <category term="Blogs" />
+    
+    <category term="other" />
     
   
 
