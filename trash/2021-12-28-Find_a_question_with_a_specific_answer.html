@@ -1,0 +1,41 @@
+<p><em>I’m writing a short blog to see if math formulas could be show correctly.</em></p>
+
+<h3 id="intro">Intro</h3>
+<p>Tomorrow is 12/29. It would be cool if I can come up with some math questions whose answers are 1229.</p>
+
+<p>A more general problem would be: given an integer \(x\), how can we find an interesting math question whose answer is exactly \(x\).</p>
+
+<p><br /></p>
+
+<h3 id="what-questions-are-interesting">What questions are interesting?</h3>
+<p>It is very easy to construct a simple question whose answer is 1229. For example 
+\[\text{What is the value of } 723 + 506 \text{?}\]</p>
+
+<p>However, this question is not interesting enough, It is <em>easy</em>, since it can be solved by simple calculation. It is also <em>not elegant</em>, because there are two strange numbers “726” and “506” which seems coming from nowhere.</p>
+
+<p>However, could we find some questions which are more interesting?</p>
+
+<p>How about this:
+\[\text{How many prime numbers are less than } 10000 \text{?}\]</p>
+
+<p>This question cannot be solved instantly, and there are not any strange numbers or formulas in the question.</p>
+
+<p>You might find it surprising that the answer of this question is indeed 1229. You can check this by this one-line python code.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">([</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span> <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">num</span><span class="p">))])</span>
+<span class="mi">1229</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h3 id="how-could-we-find-those-interesting-questions">How could we find those interesting questions?</h3>
+
+<p>This is the key part of this blog.</p>
+
+<p>The trick is to use a website called <a href="https://oeis.org/"> The On-Line Encyclopedia of Integer Sequences</a>, or simply <a href="https://oeis.org/">OEIS</a></p>
+
+<p>This is a website which stores many integer sequences. It also allows you to search for interesting sequences with a given number or some given numbers.</p>
+
+<p><img src="oeis.png" alt="img" /></p>

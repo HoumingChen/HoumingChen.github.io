@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Houming Chen</title>
   <subtitle>Math &amp; Computer Science student at the University of Michigan</subtitle>
-  <updated>2021-12-28T03:46:06-05:00</updated>
+  <updated>2021-12-29T01:19:06-05:00</updated>
   <author>
     <name>Houming Chen</name>
     <uri>/</uri>
@@ -17,6 +17,54 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>How to find a math problem whose answer is a specific value</title>
+    <link href="/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" rel="alternate" type="text/html" title="How to find a math problem whose answer is a specific value" />
+    <published>2021-12-29T00:03:47-05:00</published>
+  
+    <updated>2021-12-29T00:03:47-05:00</updated>
+  
+    <id>/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/</id>
+    <content src="/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" />
+    <author>
+      <name>Houming Chen</name>
+    </author>
+
+  
+    
+    <category term="Blogs" />
+    
+    <category term="Math" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+I’m writing a short blog to see if math formulas could be show correctly.
+
+Intro
+Today is 12/29 (Dec 29th). It would be cool if I can come up with some math questions whose answers are 1229.
+
+A more general problem would be: given an integer \(x\), how can we find an interesting math question whose answer is exactly \(x\).
+
+
+
+What questions are interesting?
+It is very easy to construct a simp...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -176,45 +224,6 @@ Tutorial link:
   
   
   Transcript of Houming Chen: University of Wisconsin - Madison (2019 Fall -...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>ICPC 2019 North Central NA Regional Contest Certificates</title>
-    <link href="/posts/icpc_certificate/" rel="alternate" type="text/html" title="ICPC 2019 North Central NA Regional Contest Certificates" />
-    <published>2021-12-27T13:32:00-05:00</published>
-  
-    <updated>2021-12-27T20:20:17-05:00</updated>
-  
-    <id>/posts/icpc_certificate/</id>
-    <content src="/posts/icpc_certificate/" />
-    <author>
-      <name>Houming Chen</name>
-    </author>
-
-  
-    
-    <category term="Site" />
-    
-    <category term="Awards" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-
-
     </summary>
   
 
