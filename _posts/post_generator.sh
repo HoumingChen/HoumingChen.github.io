@@ -1,2 +1,2 @@
 #!/bin/bash
-python post_generator.py
+konsole -e "python post_generator.py"
