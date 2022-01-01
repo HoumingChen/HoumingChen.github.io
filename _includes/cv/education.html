@@ -1,0 +1,30 @@
+{% assign education = site.data.cv-data.education %}
+{% if education %}
+  <div class="education-container container-block ">
+
+    <p class="education-title">Education</p>
+
+    {% for graduation in education %}
+    <div class="item">
+
+      {% if graduation.university %}
+        <p class="university">{{ graduation.university }}</p>
+      {% endif %}
+
+      {% if graduation.time %}
+        <p class="time">{{ graduation.time }}</p>
+      {% endif %}
+
+      {% if graduation.degree %}
+        <p class="degree">{{ graduation.degree }}</p>
+      {% endif %}
+
+      {% if graduation.gpa %}
+        <p class="gpa">GPA: {{ graduation.gpa }}</p>
+      {% endif %}
+
+    </div><!--//item-->
+    {% endfor %}
+
+  </div><!--//education-container-->
+{% endif %}

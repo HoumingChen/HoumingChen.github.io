@@ -1,0 +1,119 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Houming Chen
+    tag: Undergraduate Student at the University of Michigan
+    avatar: photo.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: houmingc@umich.com
+    phone: (608)590-3123
+    address: 1760 Broadway St, Apt. 308A, Ann Arbor, MI
+    website: houmingchen.github.io #do not add http://
+    linkedin: houming-chen-51a4a1195
+
+education:
+    - degree: B.S. Computer Science, Honor Mathematics
+      university: University of Michigan - Ann Arbor
+      college: College of Literature, Science and the Arts
+      time: 2020 Sep - Present
+      gpa: 4.0/4.0
+      details:
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+          - Bullet point
+          - Bullet point
+    - degree: B.S. Computer Science, Mathematics, Statistics
+      university: University of Wisconsin - Madison
+      college: College of Letters and Science
+      time: 2019 Sep - 2020 Aug
+      gpa: 4.0/4.0
+      details:
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+          - Bullet point
+          - Bullet point
+    - university: Beijing No.4 High School
+      time: 2016 Sep - 2019 May
+      details:
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+          - Bullet point
+          - Bullet point
+
+
+
+skills:
+    - skill: AI, Machine Learning, Deep Learning, and Data Science
+      description:
+      related:
+        - Researched at UM under Dr.Paramveer Dhillon
+        - Worked as IA for [SIADS642 Deep Learning I] at UM
+        - Worked as IA for [SI671 Data Mining] at UM
+        - A in [EECS545 Machine Learning] at UM
+        - A+ in [SI561/EECS595 NLP] at UM
+        - A in [EECS492 Introduction to AI] at UM
+        - A in [EECS505 Computational DS and ML] at UM
+
+    - skill: Computer Science and Programming
+      description:
+        - knows
+        - EECS595
+      related:
+        - A+ in [EECS281 Data Structures and Algorithms] at UM
+        - A+ in [EECS370 Intro to Computer Organization] at UM
+        - A+ in [EECS376 Foundations of Computer Science] at UM
+        - Silver Medal in ICPC 2019 NCNA Regional
+
+    - skill: Mathematics
+      related:
+        - A+ in [MATH395 Honor Analysis I] at UM
+        - A+ in [MATH396 Honor Analysis II] at UM
+        - A in [MATH493 Honor Algebra I] at UM
+        - A in [MATH590 Introduction to Topology] at UM
+        - A in [MATH525 Probability] at UM
+
+experiences:
+    - role: Research Asistant at the University of Michigan
+      time: 05/2021 - present
+      details: |
+          - Worked on several computational social sciences research projects at Dr. Paramveer Dhillion's research group.
+          - Applied of a variety of machine learning and NLP techniques on social media data.
+          - Improved my understanding of some machine learning and NLP algorithms, and acquired skills in applying those algorithms to real world problems.
+    - role: Instructional Aide at the University of Michigan
+      time: 10/2020 - 12/2021
+      details: |
+          - IA for SI671 Data Mining: Methods and Applications(21FA)
+          - IA for SIADS 642 Introduction to Deep Learning(21SP, 21FA)
+    - role: Team Member of UW Madison ICPC team
+      time: 09/2019 - 11/2019
+      details: |
+          - Collaborate and communicate with team members to learn to solve complex algorithm problems and prepare for the ACM ICPC contest.
+    - role: Teaching Assistant for AP Computer Science Principles Class in Beijing No.4 High School
+      time: 09/2018 - 05/2019
+      details: |
+          - Assisted the class by answering students’ questions and grading assignments and tests.
+    - role: Beijing Youth Science and Technology Talents Reserve Program
+      time: 11/2016 - 03/2018
+      details: |
+          - Studied in the Research Center of Massive Language Information Processing and Cloud Computing Application under Dr. Heyan Huang in Beijing Institute of Technology.
+          - Completed a research project titled “Research on smartphone-based fall detection system for the elderly” and released an android application based on the research.
+          - Learned knowledge in machine learning and acquired skills in conducting machine learning research, writing papers, giving research presentations, and thesis defense. Improved my communication skills and time management skills.
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

@@ -1,0 +1,19 @@
+{% assign skills = site.data.cv-data.skills %}
+{% if skills %}
+  <div class="skills-container container-block ">
+
+    <p class="skills-title">Skills</p>
+
+    {% for skill in skills %}
+    <div class="item">
+      <p class="skill">{{ skill.skill }}</p>
+
+      {% for related_experience in skill.related %}
+        <p class="related_experience">{{ related_experience }}</p>
+      {% endfor %}
+
+    </div><!--//item-->
+    {% endfor %}
+
+  </div><!--//education-container-->
+{% endif %}

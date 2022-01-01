@@ -1,0 +1,26 @@
+{% assign sidebar = site.data.cv-data.sidebar %}
+<div class="cv-sidebar-wrapper">
+
+  <div class="profile-container">
+
+    {% if sidebar.name %}
+    <h1 class="name">{{ sidebar.name }}</h1>
+    {% endif %}
+
+    {% if sidebar.tag %}
+    <h1 class="tagline">{{ sidebar.tag }}</h1>
+    {% endif %}
+
+    {% if sidebar.tagline %}
+    <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    {% endif %}
+
+    {% include cv/contact.html %}
+
+  </div>
+
+  {% include cv/education.html %}
+
+  {% include cv/skills.html %}
+
+</div><!--//sidebar-wrapper-->

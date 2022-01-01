@@ -1,0 +1,369 @@
+
+.cv-wrapper {
+    background:$theme-color;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
+    .body {
+        font-family: 'Roboto', sans-serif;
+        color: $text-color-secondary;
+        background: $smoky-white;
+        font-size: 14px;
+        padding: 30px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .h1, .h2, .h3, .h4, .h5, .h6  {
+        font-weight: 700;
+    }
+
+    .a {
+        color: darken($theme-color, 15%);
+        &:hover {
+            text-decoration: underline;
+            color: darken($theme-color, 30%);
+        }
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .p {
+        line-height: 1.5;
+    }
+}
+
+.cv-sidebar-wrapper {
+    background: $theme-color;
+    position: absolute;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    min-height: 800px;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+    .profile-container {
+        padding: 20px;
+        //background: darken($theme-color, 10%);
+        background: rgba(0, 0, 0, 0.2);
+        text-align: left;
+        color: #fff;
+        font-family: 'Roboto';
+    }
+    .name {
+        font-size: 24px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: rgba(256, 256, 256, 1.0);
+    }
+    .tagline {
+        color: rgba(256, 256, 256, 0.6);
+        font-size: 13.5px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .profile {
+        margin-bottom: 15px;
+    }
+
+    .avatar {
+        //used for profile image
+        max-width: 100px;
+        margin-bottom: 15px;
+        border: 0px solid #fff;
+        border-radius: 100%;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+    .contact-list {
+        .fas, .fab, .far {
+            margin-right: 5px;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        li {
+            margin-bottom: 0px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .container-block {
+        padding: 20px;
+        padding-bottom:0px
+    }
+    .container-block-nopad {
+        padding: 0px;
+    }
+    .container-block-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: rgba(256, 256, 256, 1.0);
+    }
+    .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .education-title{
+        display: block;
+        margin-top: 1.33em;
+        margin-bottom: 1.33em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+        color: rgba(256, 256, 256, 1.0);
+        margin-bottom: 5px;
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    .education-container {
+        .item {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .university {
+            display: block;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            color: rgba(256, 256, 256, 1.0);
+            margin-bottom: 0px;
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .college {
+            display: block;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: 600;
+            color: rgba(256, 256, 256, 1);
+            margin-bottom: 0px;
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .degree {
+            font-size: 15px;
+            color: rgba(256, 256, 256, 1);
+            font-weight: 600;
+            margin-bottom: 0px;
+            margin-top: 0;
+
+        }
+        .time {
+            font-size: 16px;
+            color: rgba(256, 256, 256, 1);
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .gpa {
+            font-size: 15px;
+            color: rgba(256, 256, 256, 1);
+            font-weight: 600;
+            margin-bottom: 0px;
+            margin-top: 0;
+        }
+    }
+
+    .skills-title{
+        display: block;
+        margin-top: 1.33em;
+        margin-bottom: 1.33em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+        color: rgba(256, 256, 256, 1.0);
+        margin-bottom: 5px;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .skills-container {
+        .item {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .skill {
+            display: block;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            color: rgba(256, 256, 256, 1.0);
+            margin-bottom: 0px;
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .related_experience{
+            font-size: 14px;
+            color: rgba(256, 256, 256, 1);
+            font-weight: 600;
+            margin-bottom: 0px;
+            margin-top: 0;
+        }
+    }
+
+    .languages-container {
+        .lang-desc {
+            color: rgba(256, 256, 256, 0.6);
+        }
+    }
+
+    .languages-list {
+        margin-bottom: 0;
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .interests-list {
+        margin-bottom: 0;
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.cv-main-wrapper {
+    background: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 440px;
+    .section-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        color: darken($theme-color, 15%);
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .section {
+        margin-bottom: 60px;
+    }
+
+    .experiences-section, .educations-section {
+        .item {
+            margin-bottom: 30px;
+        }
+    }
+    .upper-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
+    .job-title, .degree {
+        color: $text-color;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $text-grey;
+    }
+    .company, .university {
+        margin-bottom: 10px;
+        color: $text-grey;
+    }
+
+    .project-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 5px;
+	color: darken($theme-color, 15%);
+    }
+    .projects-section {
+        .intro {
+            margin-bottom: 30px;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+    }
+
+    .publication-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+        margin-bottom: 1px;
+    }
+    .publication-authors {
+        font-style: italic;
+        color: $text-grey;
+        margin-bottom: 1px;
+    }
+    .publications-section {
+        .intro {
+            margin-bottom: 30px;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+.skillset {
+    .item {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    .level-title {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .level-bar {
+        height: 12px;
+        background: $smoky-white;
+    }
+    .level-bar-inner {
+        height: 12px;
+        background: lighten($theme-color, 15%);
+    }
+}
+
+
+
+
+.footer {
+    padding-top: 30px;
+    .copyright {
+        line-height: 1.6;
+        color: $text-color-secondary;
+        font-size: 13px;
+    }
+
+    .fa-heart {
+        color: $heart;
+    }
+
+}
