@@ -27,6 +27,8 @@ const resource = [
   
     '/archives/',
   
+    '/cv/',
+  
 
   /* --- Favicons --- */
   

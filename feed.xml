@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Houming Chen</title>
   <subtitle>B.S. Computer Science, Mathematics 2023; College of Literature, Science and the Arts; University of Michigan, Ann Arbor.</subtitle>
-  <updated>2021-12-30T19:01:09-05:00</updated>
+  <updated>2022-01-01T06:06:28-05:00</updated>
   <author>
     <name>Houming Chen</name>
     <uri>/</uri>
@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
-  <rights> © 2021 Houming Chen </rights>
+  <rights> © 2022 Houming Chen </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -24,7 +24,7 @@
     <link href="/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" rel="alternate" type="text/html" title="How to find a math problem whose answer is a specific value" />
     <published>2021-12-29T00:03:47-05:00</published>
   
-    <updated>2021-12-29T00:03:47-05:00</updated>
+    <updated>2021-12-30T19:01:13-05:00</updated>
   
     <id>/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/</id>
     <content src="/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" />
