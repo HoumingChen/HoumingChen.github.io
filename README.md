@@ -1,3 +1,5 @@
+The CV part was build by https://github.com/sharu725/online-cv
+
 <div align="right">
 
   EN / [中文](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/README.zh-CN.md)
