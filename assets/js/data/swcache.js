@@ -17,6 +17,8 @@ const resource = [
   '/index.html',
   '/404.html',
   
+    '/cv/',
+  
     '/projects/',
   
     '/blogs/',
@@ -26,8 +28,6 @@ const resource = [
     '/files/',
   
     '/archives/',
-  
-    '/cv/',
   
 
   /* --- Favicons --- */
