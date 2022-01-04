@@ -1,13 +1,13 @@
 {% assign experiences = site.data.cv-data.experiences %}
 {% if experiences %}
 <section class="section experiences-section">
-  <h2 class="section-title">
+  <p class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
     </span>
     Experiences
-  </h2>
+  </p>
 
   {% for experience in experiences %}
   <div class="item">
@@ -15,7 +15,7 @@
     <div class="meta">
 
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
+        <p class="job-title">{{ experience.role }}</p>
         <div class="time">{{ experience.time }}</div>
       </div><!--//upper-row-->
 
