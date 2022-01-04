@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>/</id>
+  <id>http://localhost:4000/</id>
   <title>Houming Chen</title>
   <subtitle>B.S. Computer Science, Mathematics 2023; College of Literature, Science and the Arts; University of Michigan, Ann Arbor.</subtitle>
-  <updated>2022-01-04T08:23:49-05:00</updated>
+  <updated>2022-01-04T08:36:49-05:00</updated>
   <author>
     <name>Houming Chen</name>
-    <uri>/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
   <rights> © 2022 Houming Chen </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>How to find a math problem whose answer is a specific value</title>
-    <link href="/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" rel="alternate" type="text/html" title="How to find a math problem whose answer is a specific value" />
+    <link href="http://localhost:4000/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" rel="alternate" type="text/html" title="How to find a math problem whose answer is a specific value" />
     <published>2021-12-29T00:03:47-05:00</published>
   
     <updated>2021-12-30T19:01:13-05:00</updated>
   
-    <id>/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/</id>
-    <content src="/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" />
+    <id>http://localhost:4000/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/</id>
+    <content src="http://localhost:4000/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -69,13 +69,13 @@ It is very easy to construct a sim...
   
   <entry>
     <title>Bert Tutorial</title>
-    <link href="/posts/Bert_tutorial/" rel="alternate" type="text/html" title="Bert Tutorial" />
+    <link href="http://localhost:4000/posts/Bert_tutorial/" rel="alternate" type="text/html" title="Bert Tutorial" />
     <published>2021-12-28T01:03:16-05:00</published>
   
     <updated>2021-12-28T01:03:16-05:00</updated>
   
-    <id>/posts/Bert_tutorial/</id>
-    <content src="/posts/Bert_tutorial/" />
+    <id>http://localhost:4000/posts/Bert_tutorial/</id>
+    <content src="http://localhost:4000/posts/Bert_tutorial/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -112,13 +112,13 @@ Tutorial link:
   
   <entry>
     <title>Online Resume</title>
-    <link href="/posts/Online_Resume/" rel="alternate" type="text/html" title="Online Resume" />
+    <link href="http://localhost:4000/posts/Online_Resume/" rel="alternate" type="text/html" title="Online Resume" />
     <published>2021-12-27T19:45:36-05:00</published>
   
     <updated>2021-12-27T20:20:17-05:00</updated>
   
-    <id>/posts/Online_Resume/</id>
-    <content src="/posts/Online_Resume/" />
+    <id>http://localhost:4000/posts/Online_Resume/</id>
+    <content src="http://localhost:4000/posts/Online_Resume/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -149,13 +149,13 @@ Tutorial link:
   
   <entry>
     <title>Wechat QRcode</title>
-    <link href="/posts/Wechat_QRcode/" rel="alternate" type="text/html" title="Wechat QRcode" />
+    <link href="http://localhost:4000/posts/Wechat_QRcode/" rel="alternate" type="text/html" title="Wechat QRcode" />
     <published>2021-12-27T17:51:43-05:00</published>
   
     <updated>2021-12-27T20:20:17-05:00</updated>
   
-    <id>/posts/Wechat_QRcode/</id>
-    <content src="/posts/Wechat_QRcode/" />
+    <id>http://localhost:4000/posts/Wechat_QRcode/</id>
+    <content src="http://localhost:4000/posts/Wechat_QRcode/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -186,13 +186,13 @@ Tutorial link:
   
   <entry>
     <title>Unofficial Transcripts</title>
-    <link href="/posts/unofficial_transcripts/" rel="alternate" type="text/html" title="Unofficial Transcripts" />
+    <link href="http://localhost:4000/posts/unofficial_transcripts/" rel="alternate" type="text/html" title="Unofficial Transcripts" />
     <published>2021-12-27T14:55:00-05:00</published>
   
     <updated>2022-01-04T08:06:20-05:00</updated>
   
-    <id>/posts/unofficial_transcripts/</id>
-    <content src="/posts/unofficial_transcripts/" />
+    <id>http://localhost:4000/posts/unofficial_transcripts/</id>
+    <content src="http://localhost:4000/posts/unofficial_transcripts/" />
     <author>
       <name>Houming Chen</name>
     </author>
