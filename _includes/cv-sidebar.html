@@ -7,6 +7,10 @@
     <h1 class="name">{{ sidebar.name }}</h1>
     {% endif %}
 
+    {% if sidebar.pronoun %}
+    <h1 class="pronoun">({{ sidebar.pronoun }})</h1>
+    {% endif %}
+
     {% if sidebar.tag %}
     <h1 class="tagline">{{ sidebar.tag }}</h1>
     {% endif %}
