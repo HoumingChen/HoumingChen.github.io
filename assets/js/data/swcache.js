@@ -52,7 +52,7 @@ const allowedDomains = [
     'www.google-analytics.com',
   
 
-  '',
+  'houmingchen.github.io',
 
   'fonts.gstatic.com',
   'fonts.googleapis.com',
