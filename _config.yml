@@ -25,7 +25,7 @@ tagline: Math & Computer Science student at the University of Michigan  # it wil
 description:  B.S. Computer Science, Mathematics 2023; College of Literature, Science and the Arts; University of Michigan, Ann Arbor.                       # used by seo meta and the atom feed
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://houmingchen.github.io'
 
 github:
   username: HoumingChen             # change to your github username
