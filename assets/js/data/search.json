@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "How to train word2vec models with gensim using multiple files",
+    "url": "/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/",
+    "categories": "Blogs, Machine Learning & Data Science",
+    "tags": "machine learning, NLP, tutorial",
+    "date": "2022-01-14 20:13:09 -0500",
+    
+
+
+
+
+
+    "snippet": "When we are training word2vec models with gensim, sometimes we might face the trouble that our training data are in multiple files and the files are so large that we cannot load them to RAM all at once.This can be easily fixed by defining a iterator to iterate through those files.Here is a very short colab tutorial: link "
+  },
+  
+  {
     "title": "How to find a math problem whose answer is a specific value",
     "url": "/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/",
     "categories": "Blogs, Math",

@@ -52,7 +52,7 @@ const allowedDomains = [
     'www.google-analytics.com',
   
 
-  'houmingchen.github.io',
+  'localhost:4000',
 
   'fonts.gstatic.com',
   'fonts.googleapis.com',
