@@ -17,9 +17,7 @@ const resource = [
   '/index.html',
   '/404.html',
   
-    '/cv/',
-  
-    '/projects/',
+    '/porojects/',
   
     '/blogs/',
   
@@ -52,7 +50,7 @@ const allowedDomains = [
     'www.google-analytics.com',
   
 
-  'localhost:4000',
+  'houmingchen.github.io',
 
   'fonts.gstatic.com',
   'fonts.googleapis.com',

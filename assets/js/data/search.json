@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "ICPC 2021 East Central NA Regional Contest Certificates",
+    "url": "/posts/icpc_certificate_2021/",
+    "categories": "Site, Awards",
+    "tags": "awards, certificate, archieve, competition",
+    "date": "2022-03-27 17:25:24 -0400",
+    
+
+
+
+
+
+    "snippet": ""
+  },
+  
+  {
     "title": "How to train word2vec models with gensim using multiple files",
     "url": "/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/",
     "categories": "Blogs, Machine Learning & Data Science",
@@ -92,7 +107,7 @@
   
   {
     "title": "ICPC 2019 North Central NA Regional Contest Certificates",
-    "url": "/posts/icpc_certificate/",
+    "url": "/posts/icpc_certificate_2019/",
     "categories": "Site, Awards",
     "tags": "awards, certificate, archieve, competition",
     "date": "2021-12-27 13:32:00 -0500",

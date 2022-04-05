@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://houmingchen.github.io/</id>
   <title>Houming Chen</title>
   <subtitle>B.S. Computer Science, Mathematics 2023; College of Literature, Science and the Arts; University of Michigan, Ann Arbor.</subtitle>
-  <updated>2022-01-14T20:14:55-05:00</updated>
+  <updated>2022-04-05T16:38:19-04:00</updated>
   <author>
     <name>Houming Chen</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://houmingchen.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://houmingchen.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="https://houmingchen.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
   <rights> © 2022 Houming Chen </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,54 @@
 
   
   <entry>
+    <title>ICPC 2021 East Central NA Regional Contest Certificates</title>
+    <link href="https://houmingchen.github.io/posts/icpc_certificate_2021/" rel="alternate" type="text/html" title="ICPC 2021 East Central NA Regional Contest Certificates" />
+    <published>2022-03-27T17:25:24-04:00</published>
+  
+    <updated>2022-03-27T17:25:24-04:00</updated>
+  
+    <id>https://houmingchen.github.io/posts/icpc_certificate_2021/</id>
+    <content src="https://houmingchen.github.io/posts/icpc_certificate_2021/" />
+    <author>
+      <name>Houming Chen</name>
+    </author>
+
+  
+    
+    <category term="Site" />
+    
+    <category term="Awards" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>How to train word2vec models with gensim using multiple files</title>
-    <link href="http://localhost:4000/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/" rel="alternate" type="text/html" title="How to train word2vec models with gensim using multiple files" />
+    <link href="https://houmingchen.github.io/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/" rel="alternate" type="text/html" title="How to train word2vec models with gensim using multiple files" />
     <published>2022-01-14T20:13:09-05:00</published>
   
     <updated>2022-01-14T20:13:09-05:00</updated>
   
-    <id>http://localhost:4000/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/</id>
-    <content src="http://localhost:4000/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/" />
+    <id>https://houmingchen.github.io/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/</id>
+    <content src="https://houmingchen.github.io/posts/How_to_train_word2vec_models_with_gensim_using_multiple_files/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -65,13 +105,13 @@ Here is a very short colab tutorial:
   
   <entry>
     <title>How to find a math problem whose answer is a specific value</title>
-    <link href="http://localhost:4000/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" rel="alternate" type="text/html" title="How to find a math problem whose answer is a specific value" />
+    <link href="https://houmingchen.github.io/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" rel="alternate" type="text/html" title="How to find a math problem whose answer is a specific value" />
     <published>2021-12-29T00:03:47-05:00</published>
   
     <updated>2021-12-30T19:01:13-05:00</updated>
   
-    <id>http://localhost:4000/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/</id>
-    <content src="http://localhost:4000/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" />
+    <id>https://houmingchen.github.io/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/</id>
+    <content src="https://houmingchen.github.io/posts/How_to_find_a_math_problem_whose_answer_is_a_specific_value/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -113,13 +153,13 @@ It is very easy to construct a sim...
   
   <entry>
     <title>Bert Tutorial</title>
-    <link href="http://localhost:4000/posts/Bert_tutorial/" rel="alternate" type="text/html" title="Bert Tutorial" />
+    <link href="https://houmingchen.github.io/posts/Bert_tutorial/" rel="alternate" type="text/html" title="Bert Tutorial" />
     <published>2021-12-28T01:03:16-05:00</published>
   
     <updated>2021-12-28T01:03:16-05:00</updated>
   
-    <id>http://localhost:4000/posts/Bert_tutorial/</id>
-    <content src="http://localhost:4000/posts/Bert_tutorial/" />
+    <id>https://houmingchen.github.io/posts/Bert_tutorial/</id>
+    <content src="https://houmingchen.github.io/posts/Bert_tutorial/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -156,13 +196,13 @@ Tutorial link:
   
   <entry>
     <title>Online Resume</title>
-    <link href="http://localhost:4000/posts/Online_Resume/" rel="alternate" type="text/html" title="Online Resume" />
+    <link href="https://houmingchen.github.io/posts/Online_Resume/" rel="alternate" type="text/html" title="Online Resume" />
     <published>2021-12-27T19:45:36-05:00</published>
   
     <updated>2021-12-27T20:20:17-05:00</updated>
   
-    <id>http://localhost:4000/posts/Online_Resume/</id>
-    <content src="http://localhost:4000/posts/Online_Resume/" />
+    <id>https://houmingchen.github.io/posts/Online_Resume/</id>
+    <content src="https://houmingchen.github.io/posts/Online_Resume/" />
     <author>
       <name>Houming Chen</name>
     </author>
@@ -172,43 +212,6 @@ Tutorial link:
     <category term="Site" />
     
     <category term="Resume" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Wechat QRcode</title>
-    <link href="http://localhost:4000/posts/Wechat_QRcode/" rel="alternate" type="text/html" title="Wechat QRcode" />
-    <published>2021-12-27T17:51:43-05:00</published>
-  
-    <updated>2021-12-27T20:20:17-05:00</updated>
-  
-    <id>http://localhost:4000/posts/Wechat_QRcode/</id>
-    <content src="http://localhost:4000/posts/Wechat_QRcode/" />
-    <author>
-      <name>Houming Chen</name>
-    </author>
-
-  
-    
-    <category term="Site" />
-    
-    <category term="Contacts" />
     
   
 
