@@ -775,16 +775,134 @@ polynomial and exponential models. Source: <a href="https://arxiv.org/abs/2007.0
         <article id="strategies">
             <h2 class="major">Possible Release Strategies</h2>
 
+            <figure>
+                  <span class="image main">
+                      <img src="images/openAI-GPT-2.png" alt="">
+                    <figcaption>
+                      GPT-2. A powerful language model made by OpenAI, which first brought the concern of whether it is always good to release
+                      deep learning model to the deep learning community.
+                      Image Source: <a href="https://jalammar.github.io/illustrated-gpt2/" > Jay Alammar </a></figcaption>
+                  </span>
+            </figure>
+
             <h3>Before Releasing: Study on the Potential Negative Social Impact of the Model and Evaluate the Model</h3>
 
+            <p>Before deciding whether to release the pre-trained model,
+              it is always helpful to research the potential negative social impact and ethical concerns
+              in advance and publish the results to the public. </p>
 
-            <h3>Releasing the pre-trained model in several stages</h3>
+            <p>
+              Top conferences in AI, like
+              <a href="https://nips.cc/public/EthicsGuidelines">NeuralIPS</a> and
+              <a href="https://cvpr2022.thecvf.com/ethics-guidelines">CVPR</a>,
+              have all made ethics policies requiring researchers to discuss their models' potential negative
+              social impact in their research papers
+            </p>
+
+            <p>
+              Researchers can also try some evaluation methods and benchmarks to evaluate the bias in their deep learning models.
+              For example, if you want to detect the stereotypical bias in your language models,
+              <a href="https://aclanthology.org/2021.acl-long.416/">Try the method describe in this paper.</a>
+            </p>
 
 
-            <h3>Study on detection algorithm</h3>
+          <figure>
+              <span class="image main">
+                  <img src="images/steroset.jpg" alt="">
+                <figcaption>
+                   Evaluations to Detect Stereotypes in Language Models.
+                   Image Source: <a href="https://aclanthology.org/2021.acl-long.416/" > StereoSet: Measuring stereotypical bias in pretrained language models </a></figcaption>
+              </span>
+          </figure>
 
 
-            <h3>Consider withholding the model but allow other people to access it to some degree</h3>
+            <h3>Releasing the Pre-trained Model in Several Stages</h3>
+
+            <p>
+              If you are pondering about releasing a model that might cause potential negative social impact,
+              one good strategy they could adopt is releasing the pre-trained model in stages.
+              Before releasing the pre-trained model, you should create and publish release plans,
+              then release the pre-trained model stage by stage, and then monitor its impact on society.
+              This strategy provides the public time to cope with the impact of the model and allows you to study the
+              influence of the model, so you can adjust their plans or even stop the release when things get out of control.
+            </p>
+
+            <p>
+              One example of this is how <a href="https://arxiv.org/abs/1908.09203">OpenAI released their GPT-2</a>.
+              After OpenAI developed GPT-2, they wrote an article discussing the potential negative impact and ethical
+              concerns about the release of GPT-2 and finally concluded that they would release GPT-2 in 4 stages.
+              They decided that they would first release a minimal version of GPT-2,
+              then a slightly larger version of GPT-2,
+              then a larger one, and finally the true GPT-2.
+              They also decided that they would postpone or stop the release if they found out that the released model
+              was causing severe harm to society.
+            </p>
+
+          <figure>
+                  <span class="image main">
+                      <img src="images/gpt2-sizes.png" alt="">
+                    <figcaption>
+                      The four versions of GPT-2
+                      Image Source: <a href="https://jalammar.github.io/illustrated-gpt2/" > Jay Alammar </a></figcaption>
+                  </span>
+          </figure>
+
+
+
+
+            <h3>Use Deep Learning to Fight Against Deep Learning: Study on Detection Algorithm</h3>
+
+            <p>
+              Another approach is to use deep learning to fight against deep learning.
+              Specifically, researchers who propose new deep learning models for generation and synthesis tasks should
+              also consider developing deep learning models to detect those machine-generated content.
+              There are deep learning models that can produce machine-generated content,
+              but researchers can also
+              <a href="https://arxiv.org/abs/1909.11573"> develop deep learning models that can detect those content </a>
+              .
+
+              Therefore, researchers who develop generative or synthesis models should consider developing detection
+              models and release those models simultaneously to mitigate the negative social impact caused by the generative
+              or synthesis models.
+            </p>
+
+            <figure>
+                      <span class="image main">
+                          <img src="images/deepfakedetection.jpg" alt="">
+                        <figcaption>
+                          A Deep Fake Image Detection Algorithm Based Deep Learning
+                          Image Source: <a href="https://www.mdpi.com/2076-3417/10/1/370" > Deep Fake Image Detection Based on Pairwise Learning </a></figcaption>
+                      </span>
+            </figure>
+
+
+            <h3>Consider Withholding the Model but Allow Other People to Access It to Some Degree</h3>
+
+            <p>Finally, if it is too dangerous to release the pre-trained model, researchers can also withhold the
+              model but allow other people to access it to some degree. This was what OpenAI did for their GPT-3.
+              Users could use GPT-3 through an <a href = "https://openai.com/api/"> API </a> provided by OpenAI.
+              using this process, OpenAI could monitor what the user is doing, so it can stop the user when it detects misuse of GPT-3.
+            </p>
+
+            <figure>
+                <span class="image main">
+                    <img src="images/api_eg.png" alt="">
+                  <figcaption>
+                    A picture of OpenAI's API for GPT-3
+                    Image Source: <a href="https://jman4190.medium.com/how-to-build-a-gpt-3-chatbot-with-python-7b83e55805e6" > Medium </a></figcaption>
+                </span>
+            </figure>
+
+          <h3>Conclusion</h3>
+
+          <p>
+            Considering the significant benefits of releasing pre-trained deep learning model and the harm caused by
+            the misuse of the released pre-trained deep learning model,
+            in many cases, neither releasing the model nor withholding the model is not the best choice.
+            Researchers of deep learning need to consider various strategies to maximize the contribution of their
+            research so that their study could not only benefit the development of deep learning and related area
+            but also influence society positively.
+          </p>
 
 
         </article>
