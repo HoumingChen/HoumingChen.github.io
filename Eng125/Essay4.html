@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>ENG 125 Final Project</title>
+    <title>To release or not to release pre-trained deep learning models?</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -31,9 +31,7 @@
                 <p>
                     A brief survey on the benefits and potential dangers of the release of modern deep learning models and the release strategies of the models.
                 </p>
-                <p>
-                  <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> Read the paper </a>
-                </p>
+
             </div>
         </div>
         <nav>
@@ -42,10 +40,11 @@
                 <li><a href="#benefits">Benefits of Releasing Models</a></li>
                 <li><a href="#danger">Dangers Brought by Releasing Models</a></li>
                 <li><a href="#strategies">Possible Release Strategies</a></li>
-                <li><a href="https://houmingchen.github.io/"> --- About Me --- </a></li>
+                <li><a href="https://houmingchen.github.io/"> |--- About Me ---| </a></li>
                 <!--<li><a href="#elements">Elements</a></li>-->
             </ul>
         </nav>
+
     </header>
 
     <!-- Main -->
@@ -123,17 +122,99 @@
 
         <!-- Work -->
         <article id="benefits">
-            <h2 class="major">Benefits of Releasing Models</h2>
-            <span class="image main"><img src="images/model-size-graph.jpg" alt=""/></span>
-          <h3>Great </h3>
-          <h3>Protecting Academic Integrity</h3>
+            <h2 class="major">Why Releasing Pre-trained</h2>
+            <h2 class="major">Deep Learning Models is </h2>
+            <h2 class="major">Important and Beneficial</h2>
+
+          <h3>Context: The Cost of Training Deep Learning Models is Growing Rapidly </h3>
+          <p>
+            As deep learning models are developing quickly, the costs of training the state-of-the-art deep learning models also elevate at a tremendous speed.
+            This makes the training of deep learning models more and more unaffordable to most researchers, companies, and research institutes.
+            <figure>
+              <span class="image main">
+                  <img src="images/model-size-graph.jpg" alt="">
+                <figcaption>Trend of sizes of state-of-the-art NLP models over time. Image Source: <a href="https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/" > Microsoft</a></figcaption>
+              </span>
+            </figure>
+
+          The increasing cost of training the state-of-the-art deep learning models includes not only the cost of money and time. In fact,
+          training large deep learning models also burdens the environment.
+          Training a BERT model from the start with GPU would be "roughly equivalent to a trans-American flight."
+          See this
+          <a herf="https://aclanthology.org/P19-1355/"> ACL Paper </a>.
+
+          <figure>
+              <span class="image main">
+                  <img src="images/carbon.png" alt="">
+                <figcaption> Image Source: <a href="https://towardsdatascience.com/deep-learning-and-carbon-emissions-79723d5bc86e" > Toward Data Science</a></figcaption>
+              </span>
+          </figure>
+
+          What is worse is that these costs are still growing exponentially.
+          <figure>
+              <span class="image main">
+                  <img src="images/future.jpg" alt="">
+                <figcaption>  Implications of achieving performance benchmarks on the computation (in Gigaflops),
+carbon emissions (lbs), and economic costs ($USD) from deep learning based on projections from
+polynomial and exponential models. Source: <a href="https://arxiv.org/abs/2007.05558" >The Computational Limits of Deep Learning</a></figcaption>
+              </span>
+          </figure>
+
+          Considering the tremendous cost of training deep learning models, the last thing we want is to train one deep learning model repeatedly.
+          If researchers could release their deep learning models, all people in this world who want to use the model
+          can download those from the internet and use them conveniently.
+
+          <figure>
+              <span class="image main">
+                  <img src="images/download_models.png" alt="">
+                <figcaption> Download Deep Learning Models from the Internet. A Screen Shot of <a href="https://huggingface.co/models" >Hugging Face</a></figcaption>
+              </span>
+          </figure>
+
+
+
+          <h3>Better Reproducibility <span>&#8776;</span> Protecting Academic Integrity</h3>
+
+
+          <figure>
+              <span class="image main">
+                  <img src="images/reproducibility.jpg" alt="">
+                <figcaption> Image Source: <a href="https://www.displayr.com/what-is-reproducible-research/" >Displayr</a></figcaption>
+              </span>
+          </figure>
+
+          <p>
+            Due to the high cost of training a modern deep learning model,
+            it is incredibly difficult to reproduce the results of modern deep learning research papers from scratch.
+            Therefore, releasing pre-trained deep learning models significantly contribute to the reproducibility of the
+            deep learning research, enhancing the credibility of the research and protecting the academic integrity of the area.
+
+            Reproducibility is important to all science and engineer research.
+
+            The validity of a work that cannot be reproduced will be doubted
+            because people cannot know whether the paper's authors are lying.
+
+          </p>
+
+
+
+
           <h3>Benefiting the Fairness in AI Research</h3>
+
+          <figure>
+              <span class="image main">
+                  <img src="images/diversity.jpg" alt="">
+                <figcaption> Image Source: <a href="https://www.artificialintelligence-news.com/2019/04/18/stem-diversity-ai-white-male-bias/" >Artificial Intelligence News</a></figcaption>
+              </span>
+          </figure>
+
+
           <h3>Contribute to the Development of Research and Application in Deep Learning and Related Areas</h3>
 
         </article>
 
       <article id="danger">
-        <h2 class="major">Benefits of Releasing</h2>
+        <h2 class="major">Dangers Brought by Releasing</h2>
         <span class="image main"><img src="images/pic02.jpg" alt=""/></span>
         <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
           Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin
@@ -146,7 +227,7 @@
 
         <!-- About -->
         <article id="strategies">
-            <h2 class="major">About</h2>
+            <h2 class="major">Possible Release Strategies</h2>
             <span class="image main"><img src="images/pic03.jpg" alt=""/></span>
             <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend
                 sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam.
@@ -458,6 +539,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 
     <footer id="footer">
+        <p>
+          <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> Read the original paper </a>
+        </p>
         <p class="copyright">
           By <a href="https://houmingchen.github.io/">Houming Chen</a>, based on templates by <a href="https://html5up.net">HTML5 UP</a>.
         </p>
