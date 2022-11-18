@@ -17,7 +17,7 @@ const resource = [
   '/index.html',
   '/404.html',
   
-    '/porojects/',
+    '/projects/',
   
     '/blogs/',
   

@@ -42,7 +42,7 @@
 
 
 
-    "snippet": "When we are training word2vec models with gensim, sometimes we might face the trouble that our training data are in multiple files and the files are so large that we cannot load them to RAM all at once.This can be easily fixed by defining a iterator to iterate through those files.Here is a very short colab tutorial: link "
+    "snippet": "When we are training word2vec models with gensim, sometimes we might face the trouble that our training data are in multiple files and the files are so large that we cannot load them to RAM all at once.This can be easily fixed by defining an iterator to iterate through those files.Here is a very short colab tutorial: link "
   },
   
   {
@@ -117,7 +117,7 @@
 
 
 
-    "snippet": "  Unofficial transcripts(pdf)  Transcript of Houming Chen: University of Michigan - Ann Arbor (2020 Fall - present)  GPA:4.0/4.0      Transcript of Houming Chen: University of Wisconsin - Madison (2019 Fall - 2020 Summer)  GPA:4.0/4.0  "
+    "snippet": "  Unofficial transcripts(pdf)  Transcript of Houming Chen: University of Michigan - Ann Arbor (2020 Fall - present)  GPA3.953/4.000      Transcript of Houming Chen: University of Wisconsin - Madison (2019 Fall - 2020 Summer)  GPA:4.000/4.000  "
   },
   
   {

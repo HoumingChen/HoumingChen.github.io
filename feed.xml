@@ -4,7 +4,7 @@
   <id>https://houmingchen.github.io/</id>
   <title>Houming Chen</title>
   <subtitle>B.S. Computer Science, Mathematics 2023; College of Literature, Science and the Arts; University of Michigan, Ann Arbor.</subtitle>
-  <updated>2022-04-28T18:57:33-04:00</updated>
+  <updated>2022-11-18T01:00:52-05:00</updated>
   <author>
     <name>Houming Chen</name>
     <uri>https://houmingchen.github.io/</uri>
@@ -127,7 +127,7 @@ link: http://127.0.0.1:4000/Eng125/Essay4
 
 When we are training word2vec models with gensim, sometimes we might face the trouble that our training data are in multiple files and the files are so large that we cannot load them to RAM all at once.
 
-This can be easily fixed by defining a iterator to iterate through those files.
+This can be easily fixed by defining an iterator to iterate through those files.
 
 Here is a very short colab tutorial:
  link 
