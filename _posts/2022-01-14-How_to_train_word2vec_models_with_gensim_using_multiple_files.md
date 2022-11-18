@@ -17,7 +17,7 @@ math: false
 
 When we are training word2vec models with gensim, sometimes we might face the trouble that our training data are in multiple files and the files are so large that we cannot load them to RAM all at once.
 
-This can be easily fixed by defining a iterator to iterate through those files.
+This can be easily fixed by defining an iterator to iterate through those files.
 
 Here is a very short colab tutorial:
 <a href = "https://colab.research.google.com/drive/1pPq0rP2zGuv9p3Qt4RHgDETowEdPckHZ"> link </a>
