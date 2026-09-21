@@ -20,9 +20,16 @@ timezone: America/Detroit
 
 title: Houming Chen                          # the main title
 
-tagline: Math & Computer Science student at the University of Michigan  # it will display as the sub-title
+tagline: Ph.D. Candidate · University of Michigan
 
-description:  B.S. Computer Science, Mathematics 2023; College of Literature, Science and the Arts; University of Michigan, Ann Arbor.                       # used by seo meta and the atom feed
+description: >-
+  Houming Chen is a Ph.D. candidate in Computer Science and Engineering at the
+  University of Michigan, researching data discovery, schema matching, and ranking robustness.
+
+# Keep the Jekyll experiments accessible at their original URLs, but hide
+# blog navigation, recommendations, search results, and feed entries.
+hide_blog: true
+cv_pdf: /assets/pdf/Houming_Chen_CV.pdf
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://houmingchen.github.io'
@@ -40,7 +47,9 @@ social:
   email: houmingc@umich.edu             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/houming_chen      # change to your twitter homepage
+    - https://houmingchen.github.io/
+    - https://scholar.google.com/citations?user=Olyn9pwAAAAJ&hl=en
+    - https://twitter.com/houming_chen
     - https://github.com/HoumingChen       # change to your github homepage
     - https://www.facebook.com/houming.chen.395
     - https://www.linkedin.com/in/houming-chen-51a4a1195/

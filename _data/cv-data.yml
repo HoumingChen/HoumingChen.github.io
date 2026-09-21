@@ -1,138 +1,52 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
-sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
-
-    # Profile information
-    name: Houming Chen
-    pronoun: He/Him
-    tag: Undergraduate Student at the University of Michigan
-    avatar: photo.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-    # Sidebar links
-    email: houmingc@umich.com
-    phone: (608)590-3123
-    address: 1760 Broadway St, Apt.308, Ann Arbor, MI
-    website: houmingchen.github.io #do not add http://
-    linkedin: houming-chen-51a4a1195
+research_interests: >-
+  Data management, data discovery, data integration and schema matching,
+  ranking robustness, and large language models for data systems.
 
 education:
-    - degree: B.S. Computer Science, Honor Mathematics
-      university: University of Michigan - Ann Arbor
-      college: College of Literature, Science and the Arts
-      time: 2020 Sep - Present
-      gpa: 4.0/4.0
-      details:
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - degree: B.S. Computer Science, Mathematics, Statistics
-      university: University of Wisconsin - Madison
-      college: College of Letters and Science
-      time: 2019 Sep - 2020 Aug
-      gpa: 4.0/4.0
-      details:
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - university: Beijing No.4 High School
-      time: 2016 Sep - 2019 May
-      details:
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+  - institution: University of Michigan, Ann Arbor
+    date: 2023 – Present
+    detail: "Ph.D. Candidate in Computer Science and Engineering; Advisor: H. V. Jagadish"
+  - institution: University of Michigan, Ann Arbor
+    date: 2020 – 2023
+    detail: B.S. in Computer Science; Honors Mathematics
+  - institution: University of Wisconsin-Madison
+    date: 2019 – 2020
+    detail: Undergraduate studies in Computer Science, Mathematics, and Statistics
 
+research:
+  - role: Research Assistant, Database Group, University of Michigan
+    date: May 2022 – Present
+    detail: "Advisor: H. V. Jagadish"
+    bullets:
+      - "Operationalization-aware data discovery: Defined and benchmarked the task of mapping research questions to appropriate measurements and database columns."
+      - "Context-aware schema matching: Developed ConStruM, a structure-guided framework that selects and organizes query-specific evidence under a context budget using a context tree and similarity hypergraph."
+      - "Ranking stability: Generalized exact ranking stability to distance-sensitive measures and developed algorithms for two-dimensional, multidimensional, and quasiconvex settings."
+  - role: Research Assistant, School of Information, University of Michigan
+    date: May 2021 – May 2023
+    detail: "Advisor: Paramveer S. Dhillon"
+    bullets:
+      - Contributed data analysis and statistical modeling for computational social science projects, including a study of asymmetric engagement patterns across more than 600,000 tweets.
 
-
-skills:
-    - skill: AI, Machine Learning, Deep Learning, and Data Science
-      description:
-      related:
-        - Researched at UM under Dr.Paramveer Dhillon
-        - Worked as an IA for [SIADS642 Deep Learning I] at UM
-        - Worked as an IA for [SI671 Data Mining] at UM
-        - A in [EECS545 Machine Learning] at UM
-        - A+ in [SI561/EECS595 NLP] at UM
-        - A in [EECS492 Introduction to AI] at UM
-        - A in [EECS505 Computational DS and ML] at UM
-
-    - skill: Computer Science and Programming
-      description:
-        - knows
-        - EECS595
-      related:
-        - A+ in [EECS281 Data Structures and Algorithms] at UM
-        - A+ in [EECS370 Intro to Computer Organization] at UM
-        - A+ in [EECS376 Foundations of Computer Science] at UM
-        - Silver Medal in ICPC 2019 NCNA Regional
-
-    - skill: Mathematics
-      related:
-        - A+ in [MATH395 Honor Analysis I] at UM
-        - A+ in [MATH396 Honor Analysis II] at UM
-        - A in [MATH493 Honor Algebra I] at UM
-        - A in [MATH590 Introduction to Topology] at UM
-        - A in [MATH525 Probability] at UM
-
-experiences:
-    - role: Research Asistant at the University of Michigan
-      time: 05/2021 - present
-      details: |
-          - Worked on several computational social sciences research projects at Dr. Paramveer Dhillion’s research group, which involved applications of a variety of machine learning and NLP models on social media data.
-          - Developed a better understanding of some machine learning and NLP algorithms and gained skills in applying those algorithms to real world problems.
-          - Enhanced my ability in programming, data analysis, training and interpreting machine learning models, data visualization, model visualization, communication, and time management. Acquired experience in writing and submitting conference papers.
-          - Improved skills in programming with the following tools: spacy, nltk, gensim, fasttext, pytorch, huggingface/transformers, statsmodels, matplotlib, hadoop, pyspark, Twitter API, Google Translation API.
-    - role: Instructional Aide at the University of Michigan
-      time: 10/2020 - 12/2021
-      details: |
-          - Worked as IA for SI671 Data Mining: Methods and Applications (21FA), responsible for grading the homework and answering students’ questions.
-          - Worked as IA for SIADS 642 Introduction to Deep Learning (21SP, 21WI), responsible for grading the homework.
-          - Improved my communication and management skills as well as my understanding of the course materials.
-    - role: Team Member of ICPC teams
-      time: 09/2019 - present
-      details: |
-          - ICPC Team Member at the University of Michigan during 10/2020 - Present.
-          - ICPC Team Member at the University of Wisconsin - Madison during 10/2019 - 12/2019.
-          - Collaborated and communicated with team members to learn to solve complex algorithm problems and prepared for the ICPC contest.
-    - role: Teaching Assistant for AP Computer Science Principles Class in Beijing No.4 High School
-      time: 09/2018 - 05/2019
-      details: |
-          - Assisted the class by answering students’ questions and grading assignments and tests.
-    - role: Beijing Youth Science and Technology Talents Reserve Program
-      time: 11/2016 - 03/2018
-      details: |
-          - Studied in the Research Center of Massive Language Information Processing and Cloud Computing Application under Dr. Heyan Huang in Beijing Institute of Technology.
-          - Completed a research project titled “Research on smartphone-based fall detection system for the elderly” and released an android application based on the research.
-          - Learned knowledge in machine learning and acquired skills in conducting machine learning researches, writing papers, giving research presentations, and thesis defense. Improved my communication skills and time management skills.
+teaching:
+  - role: Graduate Student Instructor, University of Michigan
+    date: Fall 2025
+    detail: EECS 484 Database Management Systems
+    bullets:
+      - Supported student learning through course instruction, office hours, grading, and individualized help with database concepts and assignments.
+  - role: Instructional Aide and Grader, University of Michigan
+    date: 2020 – 2022
+    detail: EECS 545 Machine Learning; SI 671 Data Mining; SIADS 642 Introduction to Deep Learning
+    bullets:
+      - Graded assignments and answered student questions across undergraduate and graduate courses in machine learning, data mining, and deep learning.
 
 awards:
-    - award: Silver Medal in ICPC 2019 North Central NA Regional Contest
-      time: 11/2019
-      details: |
-        - Eighth Place in ICPC 2019 North Central NA Regional Contest
-    - award: Dean's List at University of Wisconsin - Madison
-      time: 2019
-      details: |
-        - Named to the College of Letters & Science Dean’s List of FA19 and SP19.
-    - award: Second Prize in Beijing Youth Science Creation Competition
-      time: 2018
-    - award: First Prize in National Olympiad in Informatics in Province, Beijing
-      time: 2017
-
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  - name: Evelyn O. Bychinsky Award, University of Michigan
+    date: "2022"
+  - name: James B. Angell Scholar and University Honors, University of Michigan
+    date: 2020 – 2022
+  - name: Honorable Mention (13th place), ICPC East Central North America Regional
+    date: "2021"
+  - name: Silver Medal (8th place), ICPC North Central North America Regional
+    date: "2019"
+  - name: Dean's List, University of Wisconsin-Madison
+    date: 2019 – 2020

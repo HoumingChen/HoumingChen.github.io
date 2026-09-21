@@ -1,0 +1,9 @@
+<ol class="publication-list">
+  {% for publication in site.data.publications %}
+  <li>
+    <a class="publication-title" href="{{ publication.url }}">{{ publication.title | escape }}</a>
+    <p class="publication-authors">{{ publication.authors }}</p>
+    <p class="publication-venue">{{ publication.venue | escape }}</p>
+  </li>
+  {% endfor %}
+</ol>

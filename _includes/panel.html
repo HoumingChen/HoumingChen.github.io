@@ -6,6 +6,7 @@
 
 <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down">
 
+  {% unless site.hide_blog %}
   <div class="access">
 
   {% include update-list.html %}
@@ -44,6 +45,7 @@
     </div>
   {% endif %}
   </div> <!-- .access -->
+  {% endunless %}
 
   {% if include.toc %}
     <!-- BS-toc.js will be loaded at medium priority -->

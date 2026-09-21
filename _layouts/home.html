@@ -1,77 +1,31 @@
 ---
-layout: page
-# The Home page layout
+layout: academic
 ---
-
-{% include lang.html %}
-
-<div id="header">
+<header class="academic-header">
   <h1>Houming Chen</h1>
-  <p>
-    <a href="cv-pure">CV</a> |
-    <!--<a href="posts/unofficial_transcripts/">Transcripts </a> |-->
+  <p class="academic-role">Ph.D. Candidate in Computer Science and Engineering<br>University of Michigan, Ann Arbor</p>
+  <nav class="academic-links" aria-label="Contact and profiles">
+    <a href="mailto:houmingc@umich.edu">Email</a>
+    <a href="https://scholar.google.com/citations?user=Olyn9pwAAAAJ&amp;hl=en">Google Scholar</a>
     <a href="https://www.linkedin.com/in/houming-chen-51a4a1195/">LinkedIn</a>
-  </p>
+    <a href="{{ site.cv_pdf | relative_url }}">CV (PDF)</a>
+  </nav>
+</header>
 
-</div>
-
-
-<section>
-  <p>
-    At present, I'm a 2nd year phd student at the
-    <a href="https://umich.edu">University of Michigan</a>
-    - Ann Arbor.
-
-    I'm also working in professor <a href="https://web.eecs.umich.edu/~jag/">Dr. H.V. Jagadish's</a> research group.
-
-
-  </p>
+<section aria-labelledby="about">
+  <h2 id="about">About</h2>
+  <p>I am a Ph.D. candidate in Computer Science and Engineering at the
+    <a href="https://umich.edu/">University of Michigan</a>, advised by
+    <a href="https://web.eecs.umich.edu/~jag/">H. V. Jagadish</a>.</p>
+  <p>My research focuses on data management: helping people discover relevant data,
+    match schemas across data sources, and understand the robustness of rankings.
+    I am also interested in using large language models to support data discovery and integration.</p>
+  <p>Previously, I received my B.S. in Computer Science with Honors Mathematics from
+    the University of Michigan and worked with
+    <a href="https://pdhillon.com/">Paramveer S. Dhillon</a> on computational social science.</p>
 </section>
 
-<section>
-  <header>
-    <h3>Researches</h3>
-  </header>
-
-   <p>
-    I'm currently working as a research assistant at <a href="https://pdhillon.com">Dr. H.V. Jagadish's</a> research group. My interest lies in data mining and machine learning.
-
-
+<section aria-labelledby="publications">
+  <h2 id="publications">Publications &amp; Preprints</h2>
+  {% include publications.html %}
 </section>
-
-
-<!--
-<section>
-  <header>
-    <h3>Academic Interest</h3>
-  </header>
-  <p>
-    My interest lies broadly in math and computer science. At present, I'm now especially interested in the application of deep learning
-    in NLP and multimodel tasks, interpretability of neural networks, explanations for the excellent generalizability
-    of neural networks, and the relationship between deep learning and cognitive science.
-  </p>
-</section>
--->
-
-<!--
-<section>
-  <header>
-    <h3>Academic Interest</h3>
-  </header>
-  <p>
-    My interest lies broadly in math and computer science. At present, I'm now especially interested in the theories and applications of machine learning.
-  </p>
-</section>
--->
-
-<!--
-<section>
-  <header>
-    <h3>Awards</h3>
-  </header>
-  <ul>
-    <li><a href="/posts/icpc_certificate_2019">Silver Medal(7th place) - ICPC 2019 North Central NA Regional Contest </a></li>
-    <li><a href="/posts/icpc_certificate_2021">Honorable Mention(13th place) - ICPC 2021 East Central NA Regional Contest </a></li>
-  </ul>
-</section>
--->

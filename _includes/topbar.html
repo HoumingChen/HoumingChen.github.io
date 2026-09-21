@@ -54,10 +54,11 @@
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {{- site.data.locales[lang].tabs[tab_key] | default: page.title -}}
       {% else %}
-        {{- site.data.locales[lang].layout[page.layout] | default: page.layout | capitalize -}}
+        {{- page.title | default: site.data.locales[lang].layout[page.layout] | default: page.layout | capitalize -}}
       {% endif %}
     </div>
 
+    {% unless site.hide_blog %}
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
     <span id="search-wrapper" class="align-items-center">
       <i class="fas fa-search fa-fw"></i>
@@ -66,6 +67,9 @@
       <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
     </span>
     <span id="search-cancel" >{{ site.data.locales[lang].search.cancel }}</span>
+    {% else %}
+    <span class="topbar-spacer" aria-hidden="true"></span>
+    {% endunless %}
   </div>
 
 </div>

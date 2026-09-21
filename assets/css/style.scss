@@ -5,8 +5,38 @@
   If the number of TAB files has changed, the following variable is required.
   And it must be defined before `@import`.
 */
-$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+$tab-count: {% if site.hide_blog %}3{% else %}{{ site.tabs | size | plus: 1 }}{% endif %};
 
 @import "{{ site.theme }}";
 
 /* append your custom style below */
+
+.academic-page {
+  max-width: 58rem;
+  padding-bottom: 3rem;
+
+  .academic-header { margin-bottom: 2rem; }
+  h1 { margin-top: 0; margin-bottom: 0.65rem; }
+  h2 { margin-top: 2rem; margin-bottom: 1rem; scroll-margin-top: 5rem; }
+  .academic-role { color: var(--text-muted-color); margin-bottom: 0.8rem; }
+  .academic-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+  .publication-list { padding-left: 1.4rem; }
+  .publication-list li { padding-left: 0.2rem; margin-bottom: 1.3rem; }
+  .publication-title { font-weight: 600; }
+  .publication-authors, .publication-venue { margin: 0.15rem 0 0; }
+  .publication-venue { color: var(--text-muted-color); font-size: 0.95rem; }
+  .cv-entry { margin-bottom: 1.3rem; }
+  .cv-entry p { margin: 0.3rem 0; }
+  .cv-entry-heading, .cv-awards li { display: flex; justify-content: space-between; gap: 0.4rem 1.5rem; }
+  .cv-entry-heading > span, .cv-awards li > span:last-child { flex-shrink: 0; color: var(--text-muted-color); }
+  .cv-awards { list-style: none; padding: 0; }
+  .cv-awards li { margin-bottom: 0.7rem; }
+}
+
+.topbar-spacer { width: 1.25em; }
+
+@media (max-width: 767px) {
+  .academic-page {
+    .cv-entry-heading, .cv-awards li { flex-direction: column; gap: 0; }
+  }
+}

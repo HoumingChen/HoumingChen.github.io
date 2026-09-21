@@ -22,9 +22,13 @@ const resource = [
   /* --- HTML --- */
   '{{ "/index.html" | relative_url }}',
   '{{ "/404.html" | relative_url }}',
+  {% if site.hide_blog %}
+  '{{ "/cv-pure.html" | relative_url }}',
+  {% else %}
   {% for tab in site.tabs %}
     '{{ tab.url | relative_url }}',
   {% endfor %}
+  {% endif %}
 
   /* --- Favicons --- */
   {% assign favicon_path = "/assets/img/favicons" | relative_url %}

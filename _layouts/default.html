@@ -32,7 +32,7 @@ layout: compress
 
       </div>
 
-      {% include search-results.html %}
+      {% unless site.hide_blog %}{% include search-results.html %}{% endunless %}
 
     </div> <!-- #main-wrapper -->
 
@@ -46,7 +46,7 @@ layout: compress
       <i class="fas fa-angle-up"></i>
     </a>
 
-    {% include search-loader.html %}
+    {% unless site.hide_blog %}{% include search-loader.html %}{% endunless %}
 
     {% include js-selector.html %}
 

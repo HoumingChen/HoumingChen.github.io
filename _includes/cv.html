@@ -1,4 +1,57 @@
-{% include cv/experiences.html %}
-{% include cv/awards.html %}
+{% assign cv = site.data.cv-data %}
+<header class="academic-header">
+  <h1>Curriculum Vitae</h1>
+  <p class="academic-role">Houming Chen · University of Michigan</p>
+  <p><a class="cv-download" href="{{ site.cv_pdf | relative_url }}">Download CV (PDF)</a></p>
+</header>
 
+<section aria-labelledby="cv-interests">
+  <h2 id="cv-interests">Research Interests</h2>
+  <p>{{ cv.research_interests }}</p>
+</section>
 
+<section aria-labelledby="cv-education">
+  <h2 id="cv-education">Education</h2>
+  {% for entry in cv.education %}
+  <div class="cv-entry">
+    <div class="cv-entry-heading"><strong>{{ entry.institution }}</strong><span>{{ entry.date }}</span></div>
+    <p>{{ entry.detail }}</p>
+  </div>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="cv-publications">
+  <h2 id="cv-publications">Publications &amp; Preprints</h2>
+  {% include publications.html %}
+</section>
+
+<section aria-labelledby="cv-research">
+  <h2 id="cv-research">Research Experience</h2>
+  {% for entry in cv.research %}
+  <div class="cv-entry">
+    <div class="cv-entry-heading"><strong>{{ entry.role }}</strong><span>{{ entry.date }}</span></div>
+    <p>{{ entry.detail }}</p>
+    <ul>{% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+  </div>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="cv-teaching">
+  <h2 id="cv-teaching">Teaching Experience</h2>
+  {% for entry in cv.teaching %}
+  <div class="cv-entry">
+    <div class="cv-entry-heading"><strong>{{ entry.role }}</strong><span>{{ entry.date }}</span></div>
+    <p>{{ entry.detail }}</p>
+    <ul>{% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+  </div>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="cv-awards">
+  <h2 id="cv-awards">Honors &amp; Awards</h2>
+  <ul class="cv-awards">
+    {% for entry in cv.awards %}
+    <li><span>{{ entry.name }}</span><span>{{ entry.date }}</span></li>
+    {% endfor %}
+  </ul>
+</section>

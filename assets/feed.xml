@@ -22,6 +22,7 @@ permalink: /feed.xml
   <icon>{{ site.baseurl }}/assets/img/favicons/favicon.ico</icon>
   <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
 
+{% unless site.hide_blog %}
 {% for post in site.posts limit: 5 %}
   {% assign post_absolute_url = post.url | absolute_url %}
   <entry>
@@ -56,6 +57,7 @@ permalink: /feed.xml
 
   </entry>
 {% endfor %}
+{% endunless %}
 </feed>
 {% endcapture %}
 {{ source | replace: '&', '&amp;' }}

@@ -37,7 +37,22 @@
         <span>{{ site.data.locales[lang].tabs.home | upcase }}</span>
       </a>
     </li>
-    <!-- the real tabs -->
+    {% if site.hide_blog %}
+    <li class="nav-item">
+      <a href="{{ '/' | relative_url }}#publications" class="nav-link"
+        onclick="if (document.body.hasAttribute('sidebar-display')) document.getElementById('mask').click()">
+        <i class="fa-fw fas fa-file-alt ml-xl-3 mr-xl-3 unloaded" aria-hidden="true"></i>
+        <span>Publications</span>
+      </a>
+    </li>
+    <li class="nav-item{% if page.url contains 'cv-pure' %} active{% endif %}">
+      <a href="{{ '/cv-pure.html' | relative_url }}" class="nav-link">
+        <i class="fa-fw fas fa-id-card ml-xl-3 mr-xl-3 unloaded" aria-hidden="true"></i>
+        <span>CV</span>
+      </a>
+    </li>
+    {% else %}
+    <!-- the original blog tabs -->
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
       <a href="{{ tab.url | relative_url }}" class="nav-link">
@@ -48,6 +63,7 @@
       </a>
     </li> <!-- .nav-item -->
     {% endfor %}
+    {% endif %}
 
   </ul> <!-- ul.nav.flex-column -->
 
@@ -70,7 +86,7 @@
       {% endcapture %}
 
       {% if url %}
-      <a href="{{ url }}" aria-label="{{ entry.type }}"
+      <a href="{{ url | escape }}" aria-label="{{ entry.type }}"
         {% unless site.theme_mode %}class="order-{{ forloop.index | plus: 2 }}"{% endunless %}
         {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
         <i class="{{ entry.icon }}"></i>
