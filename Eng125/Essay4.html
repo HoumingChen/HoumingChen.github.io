@@ -1,0 +1,1242 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Open Pre-trained Deep Learning Models are Good If and Only If We are Ready for It</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <span class="icon fa-gem"></span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>OPEN PRE-TRAINED DEEP LEARNING MODELS ARE GOOD</h1>
+                <h1>IF AND ONLY IF WE ARE READY FOR IT</h1>
+                <p>
+                    A brief survey on the benefits and potential dangers of the release of modern deep learning models and the release strategies of the models.
+                </p>
+
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#AboutThis">About This Page</a></li>
+                <li><a href="#benefits">Benefits of Releasing Models</a></li>
+                <li><a href="#danger">Dangers Brought by Releasing Models</a></li>
+                <li><a href="#strategies">Possible Release Strategies</a></li>
+                <li><a href="https://houmingchen.github.io/"> |--- About Me ---| </a></li>
+                <!--<li><a href="#elements">Elements</a></li>-->
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <article id="AboutThis">
+            <h2 class="major">About This Webpage</h2>
+            <p>
+              This webpage is made for an <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> class paper </a> I wrote in
+              <a href="https://lsa.umich.edu/english/undergraduate/writing-program/courses/LSA-125.html"> English 125: College Writing </a>
+              at the
+              <a href="https://umich.edu/"> University of Michigan </a>.
+              This webpage itself is also for an assignment of this class.
+            </p>
+
+
+            <p>
+              In this class, we were asked to write an MLA style paper on a topic we were interested in,
+              so I wrote an essay discussing the benefits and potential threats of the release of pre-trained deep learning models
+              and the potential release strategies for deep learning models that might cause negative social impacts.
+              You can read my essay
+              <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> here </a>.
+
+            </p>
+
+            <p>
+              A strictly formatted MLA paper is ideal for serious academic discussions.
+              Whether you are a scholar in the field of AI or not,
+              as long as you want to discuss the issue of the release of pre-trained deep learning models seriously,
+              I welcome you to read
+              <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> my paper </a>.
+
+            </p>
+
+            <p>
+              However, a scholarly paper is not always ideal for any kinds of arguments.
+              The way one delivers his or her arguments should highly depend on his or her audience and purpose.
+              For example, a BuzzFeed article might be suitable if one just wants to introduce the concept of deep learning to ordinary people.
+            </p>
+
+            <p>
+              Probably for this reason, in addition to writing an academic essay, on
+              <a href="https://lsa.umich.edu/english/undergraduate/writing-program/courses/LSA-125.html"> English 125: College Writing </a>,
+              we were also asked to convert our paper to another genre, where we should try to present our arguments in a different way, to different audiences, or for a different purpose.
+
+            </p>
+
+            <p>
+              For this assignment, I chose to make this webpage.
+            </p>
+
+            <p>
+              I don't know if anyone besides my professor for this class will read this webpage.
+              However, if you are not my English professor,
+              and you happen to be reading this webpage,
+              I expect you to be a person who are familiar with deep learning,
+              familiar with the crazily increasing cost of training current deep learning models,
+              and familiar with OpenAI and their policy on their GPT and Dall-E.
+              You might be worried about not having enough computation sources for training your deep learning model.
+              You might feel dissatisfied with OpenAI's withhold of their models, just like what I used to do.
+
+            </p>
+
+          <p>
+            You might also be comfortable reading scholarly paper.
+            However, in this webpage, I want to share my research with you in a casual way.
+          </p>
+
+
+
+
+
+        </article>
+
+      <article id="intro">
+        <h2 class="major">Intro</h2>
+        <span class="image main"><img src="images/pic03.jpg" alt="Illustration accompanying the introduction"/></span>
+        <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend
+          sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam.
+          Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum
+          primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+      </article>
+
+        <!-- Work -->
+        <article id="benefits">
+            <h2 class="major">Why Releasing Pre-trained</h2>
+            <h2 class="major">Deep Learning Models is </h2>
+            <h2 class="major">Important and Beneficial</h2>
+
+          <h3>Context: The Cost of Training Deep Learning Models is Growing Rapidly </h3>
+          <p>
+            As deep learning models are developing quickly, the costs of training the state-of-the-art deep learning models also elevate at a tremendous speed.
+            This makes the training of deep learning models more and more unaffordable to most researchers, companies, and research institutes.
+            <figure>
+              <span class="image main">
+                  <img src="images/model-size-graph.jpg" alt="Growth in the sizes of state-of-the-art language models">
+                <figcaption>Trend of sizes of state-of-the-art NLP models over time. Image Source: <a href="https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/" > Microsoft</a></figcaption>
+              </span>
+            </figure>
+
+          The increasing cost of training the state-of-the-art deep learning models includes not only the cost of money and time. In fact,
+          training large deep learning models also burdens the environment.
+          Training a BERT model from the start with GPU would be "roughly equivalent to a trans-American flight."
+          See this
+          <a herf="https://aclanthology.org/P19-1355/"> ACL Paper </a>.
+
+          <figure>
+              <span class="image main">
+                  <img src="images/carbon.png" alt="Carbon emissions associated with training deep learning models">
+                <figcaption> Image Source: <a href="https://towardsdatascience.com/deep-learning-and-carbon-emissions-79723d5bc86e" > Toward Data Science</a></figcaption>
+              </span>
+          </figure>
+
+          What is worse is that these costs are still growing exponentially. See
+          <a href="https://arxiv.org/abs/2007.05558" >"The Computational Limits of Deep Learning"</a> by Neil C. Thompson et. al.
+          <figure>
+              <span class="image main">
+                  <img src="images/future.jpg" alt="Projected computation, carbon emissions, and costs of deep learning">
+                <figcaption>  Implications of achieving performance benchmarks on the computation (in Gigaflops),
+carbon emissions (lbs), and economic costs ($USD) from deep learning based on projections from
+polynomial and exponential models. Source: <a href="https://arxiv.org/abs/2007.05558" >The Computational Limits of Deep Learning</a></figcaption>
+              </span>
+          </figure>
+
+          Considering the tremendous cost of training deep learning models, the last thing we want is to train one deep learning model repeatedly.
+          If researchers could release their deep learning models, all people in this world who want to use the model
+          can download those from the internet and use them conveniently.
+
+          <figure>
+              <span class="image main">
+                  <img src="images/download_models.png" alt="Model downloads on Hugging Face">
+                <figcaption> Download Deep Learning Models from the Internet. A Screen Shot of <a href="https://huggingface.co/models" >Hugging Face</a></figcaption>
+              </span>
+          </figure>
+
+
+
+          <h3>Better Reproducibility <span>&#8776;</span> Protecting Academic Integrity</h3>
+
+          <p>
+            Reproducibility is important to all science and engineer research.
+
+            If one researcher's work can be reproduced by other researchers, then this means that this work is valid and reliable.
+
+            The validity of a work that cannot be reproduced might be doubted by others
+            because people cannot know whether the paper's authors are lying.
+          </p>
+
+          <p>
+            This does not mean that academic dishonesty exists in all research that cannot be reproduced.
+            However, we hope more research in deep learning could be easily reproduced by other scientists,
+            so that we can easily ensure the validity of deep learning research.
+          </p>
+
+          <figure>
+              <span class="image main">
+                  <img src="images/reproducibility.jpg" alt="Illustration accompanying the discussion of reproducible research">
+                <figcaption> Image Source: <a href="https://www.displayr.com/what-is-reproducible-research/" >Displayr</a></figcaption>
+              </span>
+          </figure>
+
+          <p>
+            Due to the high cost of training a modern deep learning model,
+            it is incredibly difficult to reproduce the results of modern deep learning research papers from scratch.
+            Therefore, releasing pre-trained deep learning models significantly contribute to the reproducibility of the
+            deep learning research, enhancing the credibility of the research and protecting the academic integrity of the area.
+
+
+          </p>
+
+
+
+
+          <h3>Benefiting the Fairness in AI Research</h3>
+
+          <p>
+            Besides protecting academic integrity, releasing pre-trained deep learning models also contributes to fairness in AI research.
+          </p>
+
+
+          <figure>
+              <span class="image main">
+                  <img src="images/diversity.jpg" alt="Illustration accompanying the discussion of diversity in AI research">
+                <figcaption> Image Source: <a href="https://www.artificialintelligence-news.com/2019/04/18/stem-diversity-ai-white-male-bias/" >Artificial Intelligence News</a></figcaption>
+              </span>
+          </figure>
+
+          <p>
+            Not every people have equal opportunities in doing depp learning researches.
+
+            As training deep learning models requires more and more computational resources,
+            it is harder for people who are not in big companies or elite universities to study deep learning or conduct research on deep learning.
+
+            Releasing pre-trained deep learning models would give those people who are not in big companies or elite universities
+            to have opportunities studying deep learning, contributing to the fairness in deep learning research.
+          </p>
+
+          <p>
+            Moreover, as a result of the increasing cost of training deep learning models, underrepresented groups in deep learning research,
+            like black people and Hispanics, currently have fewer and fewer opportunities to study deep learning.
+
+            See <a href="https://arxiv.org/abs/2010.15581"> "The De-democratization of AI: Deep Learning and the Compute Divide in Artificial Intelligence Research" </a>
+
+          </p>
+
+
+
+          <h3>Contribute to the Development of Research and Application of Deep Learning and Related Areas</h3>
+
+          <p>
+            The released model can also significantly contribute to the development of research and application in deep learning and related areas.
+            The released pre-trained deep learning model gives deep learning researchers opportunities to do further study on the released model
+            and allows people from a variety of areas to apply those deep learning models in various meaningful ways.
+          </p>
+
+          <figure>
+              <span class="image main">
+                  <img src="images/Screenshot_resnet.png" alt="Google Scholar citations for Deep Residual Learning for Image Recognition">
+                <figcaption>Top deep learning papers have been cited for over 100k times. A Screen Shot of <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C23&q=deep+residual+learning+for+image+recognition&btnG=&oq=residual" > Google Scholar </a></figcaption>
+              </span>
+          </figure>
+
+
+
+          <figure>
+              <span class="image main">
+                  <img src="images/AI_draw1.webp" alt="Artwork generated with deep learning">
+                <figcaption>A deep learning generated art work. Image Source: <a href="https://www.reddit.com/r/singularity/comments/silo5e/an_aigenerated_painting_of_the_singularity_disco/" > Reddit </a></figcaption>
+              </span>
+          </figure>
+
+
+          <!--
+          <figure>
+              <span class="image main">
+                  <img src="images/AI_draw2.webp" alt="">
+                <figcaption>A deep learning generated art work. Image Source: <a href="https://www.reddit.com/r/deepdream/comments/s9ftbf/some_solarpunk_art_generated_with_disco_diffusion/" > Reddit </a></figcaption>
+              </span>
+          </figure>
+          -->
+
+          <figure>
+              <span class="image main">
+                  <img src="images/alphafold.png" alt="Protein structure prediction using AlphaFold">
+                <figcaption>Deep learning is used in predicting the structure of protein. Source: <a href="https://www.deepmind.com/blog/alphafold-using-ai-for-scientific-discovery-2020" > DeepMind </a></figcaption>
+              </span>
+          </figure>
+
+          <figure>
+              <span class="image main">
+                  <img src="images/neuroimage.png" alt="Deep learning applications in medical image analysis">
+                <figcaption>Deep learning has applications in a variety of healthcare areas, like the Radiology. Image Source: <a href="https://ieeeaccess.ieee.org/featured-articles/deeplearning_image/" > Deep Learning Applications in Medical Image Analysis </a></figcaption>
+              </span>
+          </figure>
+
+
+
+          <h3>Conclusion</h3>
+
+          <p>
+            Considering these reasons, in most cases, researchers, companies, and research institutes should be encouraged to release their
+            pre-trained deep learning models, which would profoundly benefit the deep learning and related areas.
+          </p>
+
+          <p>
+            For more information, you can read the second section " Why Releasing Pre-trained Deep Learning Models is Good"
+            of <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> my essay </a>.
+          </p>
+
+
+
+        </article>
+
+      <article id="danger">
+        <h2 class="major">Dangers Brought by Releasing</h2>
+        <h2 class="major">Pre-trained Deep Learning </h2>
+        <h2 class="major">Models</h2>
+
+        <h3>Malicious Use of Deep Learning Models</h3>
+
+        <figure>
+              <span class="image main">
+                  <img src="images/deepfake.jpeg" alt="Illustration of deepfake face manipulation">
+                <figcaption> <a href="https://stock.adobe.com/images/deepfake-face-fake-minimal-infographic-web-banner-vector-human-face-research-and-change-computer-video-analysis-and-downloading-image-illustration/360446984?as_campaign=ftmigration2&as_channel=dpcft&as_campclass=brand&as_source=ft_web&as_camptype=acquisition&as_audience=users&as_content=closure_asset-detail-page" > Licensed from Adobe Stock </a></figcaption>
+              </span>
+        </figure>
+
+        With the excellent ability in various generation and synthesis tasks, some deep learning models can
+        become very harmful if they are used by some people maliciously.
+        For example, image and video generation and synthesis algorithms could be used to make
+        <a href="https://timreview.ca/article/1282">revenge porn, bullying, fake video evidence in courts, political sabotage, or terrorist propaganda</a>
+        .
+        Language models could be used to
+        <a href="https://openai.com/blog/better-language-models/">
+          generate fake news, produce spam messages,
+          automatically produce abusive messages on social media, and impersonate astroturfing
+        </a>
+        .
+
+        <figure>
+              <span class="image main">
+                  <img src="images/deepfake.png" alt="Face swapping with DeepFaceLab">
+                <figcaption>Face Swapping Technology. Image Source: <a href="https://github.com/iperov/DeepFaceLab" > DeepFaceLab </a></figcaption>
+              </span>
+        </figure>
+
+        For example, in 2022, two stanford researchers have found that
+        <a href="https://www.npr.org/2022/03/27/1088140809/fake-linkedin-profiles%7D,%20journal=%7BNational%20Public%20Radio">
+          numerous LinkedIn profiles are computer-generated fake profiles
+        </a>.
+
+        <div id="graphic" class="intro graphic" role="img">
+          <div id="g-_keenan-intro-box" class="ai2html">
+            <!-- Generated by ai2html v0.60 - 2022-03-25 - 13:21 -->
+            <!-- ai file: _keenan-intro -->
+
+            <style type="text/css" media="screen,print">
+              .g-artboard {
+                margin:0 auto;
+              }
+              #g-_keenan-intro-wide {
+                position: relative;
+                overflow: hidden;
+              }
+              @media screen and (min-width: 730px) {
+                #g-_keenan-intro-small,
+                #g-_keenan-intro-medium {
+                  display: none;
+                }
+                #g-_keenan-profile-small,
+                #g-_keenan-profile-medium {
+                  display: none;
+                }
+              }
+              @media screen and (max-width: 729px) and (min-width: 450px) {
+                #g-_keenan-intro-small,
+                #g-_keenan-intro-wide {
+                  display: none;
+                }
+                #g-_keenan-profile-small,
+                #g-_keenan-profile-wide {
+                  display: none;
+                }
+              }
+              @media screen and (max-width: 449px) {
+                #g-_keenan-intro-medium,
+                #g-_keenan-intro-wide {
+                  display: none;
+                }
+                #g-_keenan-profile-medium,
+                #g-_keenan-profile-wide {
+                  display: none;
+                }
+              }
+            </style>
+            <!-- Artboard: wide -->
+            <div id="g-_keenan-intro-wide" class="g-artboard g-artboard-v3 " data-min-width="730">
+              <style type="text/css" media="screen,print">
+                #g-_keenan-intro-wide{
+                  position:relative;
+                  overflow:hidden;
+                }
+                .g-aiAbs{
+                  position:absolute;
+                }
+                .g-aiImg{
+                  display:block;
+                  width:100% !important;
+                }
+                #g-_keenan-intro-wide p{
+                  font-family:helvetica,arial,sans-serif;
+                  font-size:13px;
+                  line-height:18px;
+                  margin:0;
+                }
+                #g-_keenan-intro-wide .g-aiPstyle0 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:18px;
+                  line-height:22px;
+                  text-align:center;
+                  color:#666666;
+                }
+                #g-_keenan-intro-wide .g-aiPstyle1 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:14px;
+                  font-weight:bold;
+                  color:#555555;
+                }
+                #g-_keenan-intro-wide .g-aiPstyle2 {
+                  font-size:12px;
+                  line-height:16px;
+                  color:#777777;
+                }
+                .g-aiPtransformed p { white-space: nowrap; }
+              </style>
+              <div id="g-_keenan-intro-wide-graphic">
+                <img alt="LinkedIn profile example discussed in the article" id="g-ai0-0" class="g-aiImg" src="images/linkedin1.jpg">
+                <div id="g-ai0-1" class="g-Layer_3 g-aiAbs" style="top:0%;left:48.8447%;width:71.6275%;margin-left:-35.8137%;">
+                  <p class="g-aiPstyle0">At first glance, Keenan Ramsey might seem like a normal person on LinkedIn.</p>
+                </div>
+                <div id="g-ai0-2" class="g-Layer_3 g-aiAbs" style="top:50.3722%;left:48.8249%;width:71.6671%;margin-left:-35.8336%;">
+                  <p class="g-aiPstyle0">But certain details in her photo stood out to Stanford researcher Renée DiResta:</p>
+                </div>
+                <div id="g-ai0-3" class="g-Layer_3 g-aiAbs" style="top:58.7868%;left:2.2156%;">
+                  <p class="g-aiPstyle1">Centered eyes</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai0-4" class="g-Layer_3 g-aiAbs" style="top:61.0921%;left:2.2156%;width:19.4922%;">
+                  <p class="g-aiPstyle2">Eyes are centered exactly in the middle of the photo.</p>
+                </div>
+                <div id="g-ai0-5" class="g-Layer_3 g-aiAbs" style="top:64.896%;left:78.3806%;">
+                  <p class="g-aiPstyle1">Vague background</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai0-6" class="g-Layer_3 g-aiAbs" style="top:67.3166%;left:78.3806%;width:19.5029%;">
+                  <p class="g-aiPstyle2">Background is blurred out and doesn’t look like anything in particular.</p>
+                </div>
+                <div id="g-ai0-7" class="g-Layer_3 g-aiAbs" style="top:84.7221%;left:2.239%;">
+                  <p class="g-aiPstyle1">Missing earring</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai0-8" class="g-Layer_3 g-aiAbs" style="top:86.2206%;left:78.4639%;">
+                  <p class="g-aiPstyle1">Hair strands</p>
+                </div>
+                <div id="g-ai0-9" class="g-Layer_3 g-aiAbs" style="top:87.1428%;left:2.2156%;width:19.4922%;">
+                  <p class="g-aiPstyle2">Typically, someone might wear matching earrings for a professional headshot.</p>
+                </div>
+                <div id="g-ai0-10" class="g-Layer_3 g-aiAbs" style="top:88.526%;left:78.3806%;width:21.5663%;">
+                  <p class="g-aiPstyle2">Some of the hair seems to blur into the background, and some strands appeared to DiResta to disappear and then reappear.</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artboard: medium -->
+            <div id="g-_keenan-intro-medium" class="g-artboard g-artboard-v3 " data-min-width="500" data-max-width="729">
+              <style type="text/css" media="screen,print">
+                #g-_keenan-intro-medium{
+                  position:relative;
+                  overflow:hidden;
+                }
+                .g-aiAbs{
+                  position:absolute;
+                }
+                .g-aiImg{
+                  display:block;
+                  width:100% !important;
+                }
+                #g-_keenan-intro-medium p{
+                  font-family:helvetica,arial,sans-serif;
+                  font-size:13px;
+                  line-height:18px;
+                  margin:0;
+                }
+                #g-_keenan-intro-medium .g-aiPstyle0 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:18px;
+                  line-height:22px;
+                  text-align:center;
+                  color:#666666;
+                }
+                #g-_keenan-intro-medium .g-aiPstyle1 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:14px;
+                  font-weight:bold;
+                  color:#555555;
+                }
+                #g-_keenan-intro-medium .g-aiPstyle2 {
+                  font-size:12px;
+                  line-height:16px;
+                  color:#777777;
+                }
+                .g-aiPtransformed p { white-space: nowrap; }
+              </style>
+              <div id="g-_keenan-intro-medium-graphic">
+                <img alt="LinkedIn profile example discussed in the article" id="g-ai1-0" class="g-aiImg" src="images/linkedin1.jpg">
+                <div id="g-ai1-1" class="g-Layer_3 g-aiAbs" style="top:0.2733%;left:50.0254%;width:91.963%;margin-left:-45.9815%;">
+                  <p class="g-aiPstyle0">At first glance, Keenan Ramsey might seem like a normal person on LinkedIn.</p>
+                </div>
+                <div id="g-ai1-2" class="g-Layer_3 g-aiAbs" style="top:47.5484%;left:50%;width:92.0138%;margin-left:-46.0069%;">
+                  <p class="g-aiPstyle0">But certain details in her photo stood out to Stanford researcher Renée DiResta:</p>
+                </div>
+                <div id="g-ai1-3" class="g-Layer_3 g-aiAbs" style="top:54.9266%;left:0.7186%;">
+                  <p class="g-aiPstyle1">Centered eyes</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai1-4" class="g-Layer_3 g-aiAbs" style="top:57.9325%;left:0.7186%;width:24.7133%;">
+                  <p class="g-aiPstyle2">Eyes are centered exactly in the middle of the photo.</p>
+                </div>
+                <div id="g-ai1-5" class="g-Layer_3 g-aiAbs" style="top:61.2117%;left:76.4288%;">
+                  <p class="g-aiPstyle1">Vague </p>
+                  <p class="g-aiPstyle1">background</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai1-6" class="g-Layer_3 g-aiAbs" style="top:66.2672%;left:76.4288%;width:23.0638%;">
+                  <p class="g-aiPstyle2">Background is blurred out and doesn’t look like anything in particular.</p>
+                </div>
+                <div id="g-ai1-7" class="g-Layer_3 g-aiAbs" style="top:78.1543%;left:0.7528%;">
+                  <p class="g-aiPstyle1">Missing earring</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai1-8" class="g-Layer_3 g-aiAbs" style="top:80.7503%;left:76.4287%;">
+                  <p class="g-aiPstyle1">Hair strands</p>
+                </div>
+                <div id="g-ai1-9" class="g-Layer_3 g-aiAbs" style="top:81.2968%;left:0.7186%;width:24.7133%;">
+                  <p class="g-aiPstyle2">Typically, someone might wear matching earrings for a professional headshot.</p>
+                </div>
+                <div id="g-ai1-10" class="g-Layer_3 g-aiAbs" style="top:83.2097%;left:76.4288%;width:23.0638%;">
+                  <p class="g-aiPstyle2">Some of the hair seems to blur into the background, and some strands appeared to DiResta to disappear and then reappear.</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artboard: small -->
+            <div id="g-_keenan-intro-small" class="g-artboard g-artboard-v3 " data-min-width="300" data-max-width="499">
+              <style type="text/css" media="screen,print">
+                #g-_keenan-intro-small{
+                  position:relative;
+                  overflow:hidden;
+                }
+                .g-aiAbs{
+                  position:absolute;
+                }
+                .g-aiImg{
+                  display:block;
+                  width:100% !important;
+                }
+                #g-_keenan-intro-small p{
+                  font-family:helvetica,arial,sans-serif;
+                  font-size:13px;
+                  line-height:18px;
+                  margin:0;
+                }
+                #g-_keenan-intro-small .g-aiPstyle0 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:18px;
+                  line-height:22px;
+                  text-align:center;
+                  color:#666666;
+                }
+                #g-_keenan-intro-small .g-aiPstyle1 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:18px;
+                  line-height:16px;
+                  font-weight:bold;
+                  text-align:center;
+                  color:#ffffff;
+                }
+                #g-_keenan-intro-small .g-aiPstyle2 {
+                  font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+                  font-size:14px;
+                  font-weight:bold;
+                  color:#555555;
+                }
+                #g-_keenan-intro-small .g-aiPstyle3 {
+                  font-size:12px;
+                  line-height:16px;
+                  color:#777777;
+                }
+                .g-aiPtransformed p { white-space: nowrap; }
+              </style>
+              <div id="g-_keenan-intro-small-graphic">
+                <img alt="LinkedIn profile example discussed in the article" id="g-ai2-0" class="g-aiImg" src="images/linkedin1.jpg">
+                <div id="g-ai2-1" class="g-Layer_3 g-aiAbs" style="top:0.2103%;left:50.8115%;width:93.7602%;margin-left:-46.8801%;">
+                  <p class="g-aiPstyle0">At first glance, Keenan Ramsey might seem like a normal person on LinkedIn.</p>
+                </div>
+                <div id="g-ai2-2" class="g-Layer_3 g-aiAbs" style="top:31.3279%;left:49.8166%;width:95.75%;margin-left:-47.875%;">
+                  <p class="g-aiPstyle0">But certain details in her photo stood out to Stanford researcher Renée DiResta:</p>
+                </div>
+                <div id="g-ai2-3" class="g-Layer_3 g-aiAbs" style="top:41.5253%;left:12.7024%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">1</p>
+                </div>
+                <div id="g-ai2-4" class="g-Layer_3 g-aiAbs" style="top:49.4098%;left:49.9173%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">2</p>
+                </div>
+                <div id="g-ai2-5" class="g-Layer_3 g-aiAbs" style="top:54.8764%;left:92.0356%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">3</p>
+                </div>
+                <div id="g-ai2-6" class="g-Layer_3 g-aiAbs" style="top:63.4969%;left:12.3995%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">4</p>
+                </div>
+                <div id="g-ai2-7" class="g-Layer_3 g-aiAbs" style="top:70.7506%;left:15.8516%;width:81.1113%;">
+                  <p class="g-aiPstyle2">Vague background</p>
+                  <p class="g-aiPstyle3">Background is blurred out and doesn’t look like anything in particular.</p>
+                </div>
+                <div id="g-ai2-8" class="g-Layer_3 g-aiAbs" style="top:72.2224%;left:8.1762%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">1</p>
+                </div>
+                <div id="g-ai2-9" class="g-Layer_3 g-aiAbs" style="top:77.3737%;left:15.8516%;width:81.1113%;">
+                  <p class="g-aiPstyle2">Centered eyes</p>
+                  <p class="g-aiPstyle3">Eyes are centered exactly in the middle of the photo.</p>
+                </div>
+                <div id="g-ai2-10" class="g-Layer_3 g-aiAbs" style="top:79.0557%;left:8.1762%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">2</p>
+                </div>
+                <div id="g-ai2-11" class="g-Layer_3 g-aiAbs" style="top:83.471%;left:15.9762%;width:80.9865%;">
+                  <p class="g-aiPstyle2">Hair strands</p>
+                  <p class="g-aiPstyle3">Some of the hair seems to blur into the background, and some strands appeared to DiResta to disappear and then reappear.</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div id="g-ai2-12" class="g-Layer_3 g-aiAbs" style="top:85.0479%;left:8.1762%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">3</p>
+                </div>
+                <div id="g-ai2-13" class="g-Layer_3 g-aiAbs" style="top:91.5658%;left:15.9762%;width:80.9865%;">
+                  <p class="g-aiPstyle2">Missing earring</p>
+                  <p class="g-aiPstyle3">Typically, someone might wear matching earrings for a professional headshot.</p>
+                </div>
+                <div id="g-ai2-14" class="g-Layer_3 g-aiAbs" style="top:93.0376%;left:8.1762%;width:9.8546%;margin-left:-4.9273%;">
+                  <p class="g-aiPstyle1">4</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <figcaption> Source: <a href="https://www.npr.org/2022/03/27/1088140809/fake-linkedin-profiles%7D,%20journal=%7BNational%20Public%20Radio" > NPR </a></figcaption>
+
+        </div>
+
+        <p>
+          <a href="https://www.linkedin.com/pulse/why-would-someone-create-fake-linkedin-profile-heres-bruce-johnston/">
+            Those bots might actively connect with real users to collect data or conduct phishing and/or spam.
+          </a>
+        </p>
+
+        <p>
+          One critical and scary reason of why there are so much fake information generated by deep learning on the
+          Internet is that accessing some power deep learning models is really easy. Since there are too many released
+          pre-trained deep learning models on the internet, one can easily use them to do some malicious act.
+
+          For example, one can easily gain some high quality StyleGan generated fake face photos from the website
+          <a href="https://this-person-does-not-exist.com"> This Person Does Not Exist</a>
+          with only one click.
+
+          Although those released models are not the direct reason for the malicious use of deep learning,
+          they allow people to create machine-generated information easily.
+
+        </p>
+
+        <figure>
+              <span class="image main">
+                  <img src="images/thisperson.png" alt="Screenshot of This Person Does Not Exist">
+                <figcaption>A Screen shot of: <a href="https://this-person-does-not-exist.com"> This Person Does Not Exist</a></figcaption>
+              </span>
+        </figure>
+
+        <p>
+          Before the malicious use of deep learning had widely appeared in society,
+          it was reasonable to consider the release of pre-trained deep learning as a good move to improve
+          the development and application of deep learning and related areas.
+          However, due to the potential harm that released pre-trained models might bring,
+          current researchers should thoroughly consider the potential negative impact of their pre-trained
+          deep learning model before deciding whether to release it.
+        </p>
+
+
+
+        <h3>Bias and Stereotypes in Deep Learning Models Might Bring Negative Social Impact If Those Models are not Used in Proper Ways</h3>
+
+        Besides the intentional malicious use of pre-trained deep learning models,
+        some deep learning applications might also unintentionally negatively impact society,
+        because <a href="https://arxiv.org/abs/1908.09635">various deep learning models exhibit strong stereotypical bias</a>.
+
+
+
+        <figure>
+              <span class="image main">
+                  <img src="images/obama.webp" alt="Example of a deep learning model reconstructing a pixelated face">
+                <figcaption>A deep learning model that aims to turn pixelated faces into high-resolution images.
+                  Image Source: <a href="https://www.theverge.com/21298762/face-depixelizer-ai-machine-learning-tool-pulse-stylegan-obama-bias" > The Verge </a></figcaption>
+              </span>
+        </figure>
+
+
+
+        <figure>
+              <span class="image main">
+                  <img src="images/liu.jpeg" alt="Example discussed in the analysis of bias in face reconstruction">
+                <figcaption>Twitter users have found out that this deep learning model seems to be more likely to turn the pixelated faces into a white person.
+                   Image Source: <a href="https://twitter.com/osazuwa/status/1274448630183845888" > @osazuwa from Twitter </a></figcaption>
+              </span>
+        </figure>
+
+        <p>Those bias are usually caused by biased dataset. Deep learning models learn from data, and if the data contains
+          bias or stereotypes, the deep learning model might learn those bias and stereotypes.</p>
+
+        <figure>
+              <span class="image main">
+                  <img src="images/bias-in-machine-learning.jpg" alt="Illustration accompanying the discussion of machine learning bias">
+                <figcaption>
+                   Image Source: <a href="https://www.foreseemed.com/blog/bias-in-machine-learning" > Foresee </a></figcaption>
+              </span>
+        </figure>
+
+        <p>
+
+          When deep learning models are released into the public. There might be many people
+          using those models directly in various downstream tasks like chatbots, employment matching,
+          automated legal aid for immigration algorithms, and advertising placement algorithms,
+          in which unbiasedness and fairness are crucial. Those people might not be aware of
+          the bias of deep learning models, which might cause severe negative social impact.
+
+          Therefore, it is crucial for researchers to evaluate the bias of their pre-trained deep learning models
+          and think carefully about whether to release those pre-trained models.
+        </p>
+
+        <h3>Conclusion</h3>
+
+        <p>
+          Considering the potential intentional and unintentional misuse of released pre-trained deep learning models,
+          one may understand that to release or not to release a deep learning model is not a simple question.
+          Although releasing a pre-trained deep learning model might bring benefits,
+          the potential negative impact that might be caused by it can not be ignored.
+          Releasing deep learning models is not always a good act. The value of released deep learning models should
+          be evaluated carefully considering various factors.
+        </p>
+
+        <p>
+          For more information, you can read the third section "New Threats Brought by the Released Deep Learning Models"
+          of <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> my essay </a>.
+        </p>
+
+
+      </article>
+
+        <!-- About -->
+        <article id="strategies">
+            <h2 class="major">Possible Release Strategies</h2>
+
+            <figure>
+                  <span class="image main">
+                      <img src="images/openAI-GPT-2.png" alt="Illustration of the GPT-2 language model">
+                    <figcaption>
+                      GPT-2. A powerful language model made by OpenAI, which first brought the concern of whether it is always good to release
+                      deep learning model to the deep learning community.
+                      Image Source: <a href="https://jalammar.github.io/illustrated-gpt2/" > Jay Alammar </a></figcaption>
+                  </span>
+            </figure>
+
+            <h3>Before Releasing: Study on the Potential Negative Social Impact of the Model and Evaluate the Model</h3>
+
+            <p>Before deciding whether to release the pre-trained model,
+              it is always helpful to research the potential negative social impact and ethical concerns
+              in advance and publish the results to the public. </p>
+
+            <p>
+              Top conferences in AI, like
+              <a href="https://nips.cc/public/EthicsGuidelines">NeuralIPS</a> and
+              <a href="https://cvpr2022.thecvf.com/ethics-guidelines">CVPR</a>,
+              have all made ethics policies requiring researchers to discuss their models' potential negative
+              social impact in their research papers
+            </p>
+
+            <p>
+              Researchers can also try some evaluation methods and benchmarks to evaluate the bias in their deep learning models.
+              For example, if you want to detect the stereotypical bias in your language models,
+              <a href="https://aclanthology.org/2021.acl-long.416/">Try the method describe in this paper.</a>
+            </p>
+
+
+          <figure>
+              <span class="image main">
+                  <img src="images/steroset.jpg" alt="StereoSet evaluation of stereotypical bias in language models">
+                <figcaption>
+                   Evaluations to Detect Stereotypes in Language Models.
+                   Image Source: <a href="https://aclanthology.org/2021.acl-long.416/" > StereoSet: Measuring stereotypical bias in pretrained language models </a></figcaption>
+              </span>
+          </figure>
+
+
+            <h3>Releasing the Pre-trained Model in Several Stages</h3>
+
+            <p>
+              If you are pondering about releasing a model that might cause potential negative social impact,
+              one good strategy they could adopt is releasing the pre-trained model in stages.
+              Before releasing the pre-trained model, you should create and publish release plans,
+              then release the pre-trained model stage by stage, and then monitor its impact on society.
+              This strategy provides the public time to cope with the impact of the model and allows you to study the
+              influence of the model, so you can adjust their plans or even stop the release when things get out of control.
+            </p>
+
+            <p>
+              One example of this is how <a href="https://arxiv.org/abs/1908.09203">OpenAI released their GPT-2</a>.
+              After OpenAI developed GPT-2, they wrote an article discussing the potential negative impact and ethical
+              concerns about the release of GPT-2 and finally concluded that they would release GPT-2 in 4 stages.
+              They decided that they would first release a minimal version of GPT-2,
+              then a slightly larger version of GPT-2,
+              then a larger one, and finally the true GPT-2.
+              They also decided that they would postpone or stop the release if they found out that the released model
+              was causing severe harm to society.
+            </p>
+
+          <figure>
+                  <span class="image main">
+                      <img src="images/gpt2-sizes.png" alt="The four sizes of the GPT-2 language model">
+                    <figcaption>
+                      The four versions of GPT-2
+                      Image Source: <a href="https://jalammar.github.io/illustrated-gpt2/" > Jay Alammar </a></figcaption>
+                  </span>
+          </figure>
+
+
+
+
+            <h3>Use Deep Learning to Fight Against Deep Learning: Study on Detection Algorithm</h3>
+
+            <p>
+              Another approach is to use deep learning to fight against deep learning.
+              Specifically, researchers who propose new deep learning models for generation and synthesis tasks should
+              also consider developing deep learning models to detect those machine-generated content.
+              There are deep learning models that can produce machine-generated content,
+              but researchers can also
+              <a href="https://arxiv.org/abs/1909.11573"> develop deep learning models that can detect those content </a>
+              .
+
+              Therefore, researchers who develop generative or synthesis models should consider developing detection
+              models and release those models simultaneously to mitigate the negative social impact caused by the generative
+              or synthesis models.
+            </p>
+
+            <figure>
+                      <span class="image main">
+                          <img src="images/deepfakedetection.jpg" alt="Deepfake image detection using pairwise learning">
+                        <figcaption>
+                          A Deep Fake Image Detection Algorithm Based Deep Learning
+                          Image Source: <a href="https://www.mdpi.com/2076-3417/10/1/370" > Deep Fake Image Detection Based on Pairwise Learning </a></figcaption>
+                      </span>
+            </figure>
+
+
+            <h3>Consider Withholding the Model but Allow Other People to Access It to Some Degree</h3>
+
+            <p>Finally, if it is too dangerous to release the pre-trained model, researchers can also withhold the
+              model but allow other people to access it to some degree. This was what OpenAI did for their GPT-3.
+              Users could use GPT-3 through an <a href = "https://openai.com/api/"> API </a> provided by OpenAI.
+              using this process, OpenAI could monitor what the user is doing, so it can stop the user when it detects misuse of GPT-3.
+            </p>
+
+            <figure>
+                <span class="image main">
+                    <img src="images/api_eg.png" alt="Example of using the GPT-3 API">
+                  <figcaption>
+                    A picture of OpenAI's API for GPT-3
+                    Image Source: <a href="https://jman4190.medium.com/how-to-build-a-gpt-3-chatbot-with-python-7b83e55805e6" > Medium </a></figcaption>
+                </span>
+            </figure>
+
+          <h3>Conclusion</h3>
+
+          <p>
+            Considering the significant benefits of releasing pre-trained deep learning model and the harm caused by
+            the misuse of the released pre-trained deep learning model,
+            in many cases, neither releasing the model nor withholding the model is not the best choice.
+            Researchers of deep learning need to consider various strategies to maximize the contribution of their
+            research so that their study could not only benefit the development of deep learning and related area
+            but also influence society positively.
+          </p>
+
+
+        </article>
+
+      <!--
+        <article id="AboutMe">
+            <h2 class="major">Intro</h2>
+            <span class="image main"><img src="images/pic01.jpg" alt=""/></span>
+            <p>lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl
+                amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam
+                maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu
+                nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies
+                condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem
+                mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque
+                aliquam maximus risus, vel sed vehicula.</p>
+        </article>
+
+
+        <article id="contact">
+            <h2 class="major">Contact</h2>
+            <form method="post" action="#">
+                <div class="fields">
+                    <div class="field half">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name"/>
+                    </div>
+                    <div class="field half">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email"/>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="primary"/></li>
+                    <li><input type="reset" value="Reset"/></li>
+                </ul>
+            </form>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </article>
+        -->
+
+        <!-- Elements -->
+        <article id="elements">
+            <h2 class="major">Elements</h2>
+
+            <section>
+                <h3 class="major">Text</h3>
+                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+                    This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+                    This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this
+                        is a link</a>.</p>
+                <hr/>
+                <h2>Heading Level 2</h2>
+                <h3>Heading Level 3</h3>
+                <h4>Heading Level 4</h4>
+                <h5>Heading Level 5</h5>
+                <h6>Heading Level 6</h6>
+                <hr/>
+                <h4>Blockquote</h4>
+                <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+                    euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                    volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor
+                    sit amet nullam adipiscing eu felis.
+                </blockquote>
+                <h4>Preformatted</h4>
+                <pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+            </section>
+
+            <section>
+                <h3 class="major">Lists</h3>
+
+                <h4>Unordered</h4>
+                <ul>
+                    <li>Dolor pulvinar etiam.</li>
+                    <li>Sagittis adipiscing.</li>
+                    <li>Felis enim feugiat.</li>
+                </ul>
+
+                <h4>Alternate</h4>
+                <ul class="alt">
+                    <li>Dolor pulvinar etiam.</li>
+                    <li>Sagittis adipiscing.</li>
+                    <li>Felis enim feugiat.</li>
+                </ul>
+
+                <h4>Ordered</h4>
+                <ol>
+                    <li>Dolor pulvinar etiam.</li>
+                    <li>Etiam vel felis viverra.</li>
+                    <li>Felis enim feugiat.</li>
+                    <li>Dolor pulvinar etiam.</li>
+                    <li>Etiam vel felis lorem.</li>
+                    <li>Felis enim et feugiat.</li>
+                </ol>
+                <h4>Icons</h4>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                </ul>
+
+                <h4>Actions</h4>
+                <ul class="actions">
+                    <li><a href="#" class="button primary">Default</a></li>
+                    <li><a href="#" class="button">Default</a></li>
+                </ul>
+                <ul class="actions stacked">
+                    <li><a href="#" class="button primary">Default</a></li>
+                    <li><a href="#" class="button">Default</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 class="major">Table</h3>
+                <h4>Default</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Item One</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Two</td>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Three</td>
+                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Five</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <h4>Alternate</h4>
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Item One</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Two</td>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Three</td>
+                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item Five</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="major">Buttons</h3>
+                <ul class="actions">
+                    <li><a href="#" class="button primary">Primary</a></li>
+                    <li><a href="#" class="button">Default</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="#" class="button">Default</a></li>
+                    <li><a href="#" class="button small">Small</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+                    <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><span class="button primary disabled">Disabled</span></li>
+                    <li><span class="button disabled">Disabled</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 class="major">Form</h3>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="demo-name">Name</label>
+                            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe"/>
+                        </div>
+                        <div class="field half">
+                            <label for="demo-email">Email</label>
+                            <input type="email" name="demo-email" id="demo-email" value=""
+                                   placeholder="jane@untitled.tld"/>
+                        </div>
+                        <div class="field">
+                            <label for="demo-category">Category</label>
+                            <select name="demo-category" id="demo-category">
+                                <option value="">-</option>
+                                <option value="1">Manufacturing</option>
+                                <option value="1">Shipping</option>
+                                <option value="1">Administration</option>
+                                <option value="1">Human Resources</option>
+                            </select>
+                        </div>
+                        <div class="field half">
+                            <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                            <label for="demo-priority-low">Low</label>
+                        </div>
+                        <div class="field half">
+                            <input type="radio" id="demo-priority-high" name="demo-priority">
+                            <label for="demo-priority-high">High</label>
+                        </div>
+                        <div class="field half">
+                            <input type="checkbox" id="demo-copy" name="demo-copy">
+                            <label for="demo-copy">Email me a copy</label>
+                        </div>
+                        <div class="field half">
+                            <input type="checkbox" id="demo-human" name="demo-human" checked>
+                            <label for="demo-human">Not a robot</label>
+                        </div>
+                        <div class="field">
+                            <label for="demo-message">Message</label>
+                            <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+                                      rows="6"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="primary"/></li>
+                        <li><input type="reset" value="Reset"/></li>
+                    </ul>
+                </form>
+            </section>
+
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+
+
+    <footer id="footer">
+        <p>
+          <a href="https://houmingchen.github.io/assets/pdf/125_Essay3.pdf"> Read the original paper </a>
+        </p>
+        <p class="copyright">
+          By <a href="https://houmingchen.github.io/">Houming Chen</a>,
+          for <a href="https://lsa.umich.edu/english/undergraduate/writing-program/courses/LSA-125.html"> English 125: College Writing </a>
+          at the <a href="https://umich.edu/"> University of Michigan </a>,
+          instructed by Professor <a href="https://lsa.umich.edu/english/people/faculty/jomholla.html">Jon Holland</a>.
+        </p>
+      <p class="copyright">
+        This webpage was built based on a template by <a href="https://html5up.net">HTML5 UP</a>, which is under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>. Changes have been made to fit the content of this webpage.
+      </p>
+
+    </footer>
+
+</div>
+
+<!-- BG -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
