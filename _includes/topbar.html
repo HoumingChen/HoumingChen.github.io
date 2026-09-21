@@ -33,9 +33,13 @@
 
         {% elsif page.layout == 'category' or page.layout == 'tag' %}
           <span>
+            {% if site.hide_blog %}
+              {{ site.data.locales[lang].tabs[item] | default: page.title }}
+            {% else %}
             <a href="{{ item | relative_url }}">
               {{ site.data.locales[lang].tabs[item] | default: page.title }}
             </a>
+            {% endif %}
           </span>
         {% endif %}
 

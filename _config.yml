@@ -160,6 +160,7 @@ exclude:
   - '*.gemspec'
   - tools
   - docs
+  - trash
   - README.md
   - LICENSE
   - gulpfile.js
