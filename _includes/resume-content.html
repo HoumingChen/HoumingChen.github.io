@@ -1,0 +1,76 @@
+<!-- Generated from the main DB resume by tools/sync_resume.py. Edit the DOCX, then regenerate. -->
+<div class="cv-content">
+<p class="cv-contact">Ann Arbor, MI  |  <a href="mailto:houmingc@umich.edu">houmingc@umich.edu</a>  |  <a href="/">houmingchen.github.io</a>  |  <a href="https://scholar.google.com/citations?user=Olyn9pwAAAAJ&amp;hl=en">Google Scholar</a>  |  <a href="https://www.linkedin.com/in/houming-chen-51a4a1195">LinkedIn</a></p>
+<p class="cv-interests">Research interests: Data management and integration; LLMs for data systems; responsible data management.</p>
+<section aria-labelledby="cv-education"><h2 id="cv-education">Education</h2>
+<h3 class="cv-project">University of Michigan, Ann Arbor</h3>
+<p class="cv-row"><span>Ph.D. Candidate, Computer Science and Engineering <em>|</em><em> GPA: 3.91/4.0</em></span><span class="cv-row-detail">2023 – Present</span></p>
+<p class="cv-row"><span>B.S., Double Major in Computer Science and Mathematics <em>|</em><em> GPA: 3.93/4.0</em></span><span class="cv-row-detail">2020 – 2023</span></p>
+<p><em>Honors in both majors; graduated with Distinction</em></p>
+<p><strong>Selected coursework</strong>: Advanced DB Systems; Distributed Systems; NLP; Randomness and Computation; Advanced CV.</p>
+</section>
+<section aria-labelledby="cv-research"><h2 id="cv-research">Research</h2>
+<p class="cv-row cv-appointment"><span><strong>Research Assistant, U-M Database Group</strong> | Advisor: H. V. Jagadish</span><span class="cv-row-detail">May 2022 – Present</span></p>
+<h3 class="cv-project">ConStruM: A Structure-Guided LLM Framework for Context-Aware Schema Matching</h3>
+<p>A framework using precomputed data structures to supply LLMs with essential context for schema matching.</p>
+<ul class="cv-contributions">
+<li>Framed context-dependent schema matching as an evidence-selection problem: column-only prompts can omit essential context, while full-schema prompts can bury it.</li>
+<li>Proposed two data structures that supply this evidence to existing LLM‑based matchers: a context tree that organizes schema summaries at multiple levels and a similarity hypergraph that groups easily confused columns.</li>
+<li>Built two large benchmarks covering over 11,000 columns from the Health and Retirement Study and the Panel Study of Income Dynamics to test context-dependent schema matching.</li>
+<li>Demonstrated ConStruM’s effectiveness through comprehensive comparisons with eight baselines and two ablations. Across the two survey benchmarks, ConStruM ranked first among the tested methods with 95.4% mean combined accuracy, compared with 51.6% for a plain LLM. The extensive experimental study supporting these findings involved over 35,000 API requests and over one billion LLM tokens.</li>
+</ul>
+<p class="cv-citation"><strong>Houming Chen</strong>, Zhe Zhang, and H. V. Jagadish. <a href="https://arxiv.org/abs/2601.20482"><em>ConStruM</em><em>: A Structure-Guided LLM Framework for Context-Aware Schema Matching.</em></a> <strong>SIGMOD 2027 (accepted).</strong> <a href="https://github.com/HoumingChen/construm">Code</a></p>
+<h3 class="cv-project">General Stability of Ranking</h3>
+<p>Formulates a mathematical measure of ranking stability and designs approximation algorithms to compute it efficiently.</p>
+<ul class="cv-contributions">
+<li>Formalized a more general measure of ranking stability, making the measure proposed in prior work a special case. The earlier measure counts only exact agreement, while the new measure assigns partial credit based on similarity between rankings. Generalized the earlier sampling algorithms to compute the new measure.</li>
+<li>Reduced ranking-stability approximation from exponential to polynomial time under identified mathematical conditions, including for the measure proposed in prior work. Developed several randomized algorithms and proved their time‑complexity bounds and high-probability guarantees on approximation error.</li>
+</ul>
+<p class="cv-citation"><strong>Houming Chen</strong> and H. V. Jagadish. <a href="https://arxiv.org/abs/2607.01546"><em>The General Stability of Ranking.</em></a> 2026. <strong>Under revision for PVLDB.</strong> <a href="https://github.com/umich-dbgroup/General-Stability-of-Ranking">Code</a></p>
+<h3 class="cv-project">Operationalization-Aware Data Discovery</h3>
+<p>Builds a benchmark for scientific data discovery from the data choices made in published studies.</p>
+<ul class="cv-contributions">
+<li>Formalized a new data-discovery problem: given an abstract scientific concept, find the database columns that can measure it. Useful columns may look unrelated to the concept, so direct similarity search can miss them.</li>
+<li>Designed a method to reduce the need for expert annotation: published studies already record which data researchers used to measure each concept. Built LLM agents to reconstruct these choices from the papers and verify them against database documentation.</li>
+<li>Released 160 questions from 111 studies, with 4,682 documented question–column links in the Health and Retirement Study’s catalog of over 122,000 columns.</li>
+</ul>
+<p class="cv-citation"><strong>Houming Chen</strong> and H. V. Jagadish. <a href="https://arxiv.org/abs/2608.04536"><em>From Research Questions to Columns: Operationalization-Aware Data Discovery.</em></a> Preprint, 2026. <a href="https://github.com/umich-dbgroup/OADD-Bench">Benchmark</a></p>
+<p class="cv-row cv-appointment"><span><strong>Research Assistant, U-M School of Information</strong> | Advisor: Paramveer S. Dhillon</span><span class="cv-row-detail">May 2021 – May 2023</span></p>
+<h3 class="cv-project">Decoding Unexpected Social Media Engagement</h3>
+<p>A computational social science study of unexpected imbalances among likes, replies, and retweets.</p>
+<ul class="cv-contributions">
+<li>Built a Spark/Hadoop pipeline to select research data from U-M’s 80+ TB Decahose archive, including a 2018 feed of over 10 billion tweets.</li>
+<li>Built an NLP pipeline for sentiment analysis and linguistic feature extraction, and implemented statistical models relating these features to unexpected engagement.</li>
+</ul>
+<p class="cv-citation">Yulin Yu, <strong>Houming Chen</strong>, Daniel M. Romero, and Paramveer S. Dhillon. <a href="https://doi.org/10.1145/3757657"><em>Signals in the Noise: Decoding Unexpected Engagement Patterns on Twitter.</em></a> <strong>CSCW 2025</strong>, PACMHCI 9(7), Article CSCW476.</p>
+</section>
+<section aria-labelledby="cv-selected-projects"><h2 id="cv-selected-projects">Selected Projects</h2>
+<h3 class="cv-project cv-row"><span>Compiler Optimization through Loop Perforation</span><span class="cv-row-detail">Winter 2024</span></h3>
+<p class="cv-row"><span><em>EECS 583 Advanced Compilers · course project</em></span><span class="cv-row-detail"><a href="/projects/loop-perforation/">Project</a></span></p>
+<p>Contributed to an LLVM project evaluating speed–accuracy tradeoffs from skipping loop computations.</p>
+<h3 class="cv-project cv-row"><span>LLM-Based Schema Matching</span><span class="cv-row-detail">Fall 2023</span></h3>
+<p class="cv-row"><span><em>EECS 584 Advanced Database Systems · course project</em></span><span class="cv-row-detail"><a href="/projects/llm-schema-matching/">Project</a></span></p>
+<p>Led a study comparing LLM prompting strategies with traditional matchers across 12 schemas.</p>
+<h3 class="cv-project cv-row"><span>Evaluating LLMs on Distributed-System Specifications</span><span class="cv-row-detail">Fall 2023</span></h3>
+<p class="cv-row"><span><em>EECS 591 Distributed Systems · course project</em></span><span class="cv-row-detail"><a href="/projects/llms-distributed-systems/">Project</a></span></p>
+<p>Proposed testing whether LLMs could explain the bugs they flagged in TLA+ specifications. Led the evaluation on two-phase commit, Paxos, and Raft.</p>
+<h3 class="cv-project cv-row"><span>ICA-SeFa: Interpretable Image Editing in GANs</span><span class="cv-row-detail">2021 – 2022</span></h3>
+<p class="cv-row"><span><em>EECS 545 Machine Learning · course project with subsequent independent research</em></span><span class="cv-row-detail"><a href="/projects/ica-sefa/">Project</a></span></p>
+<ul class="cv-contributions">
+<li>Extended SeFa with ICA to improve GAN interpretability. Derived the new algorithm through a mathematical analysis of why SeFa works.</li>
+<li>Designed a CLIP-based method for quantitative evaluation that supports new image attributes without training additional classifiers.</li>
+</ul>
+</section>
+<section aria-labelledby="cv-teaching-experience"><h2 id="cv-teaching-experience">Teaching Experience</h2>
+<p class="cv-row"><span><strong>Graduate Student Instructor, University of Michigan</strong></span><span class="cv-row-detail">Fall 2025</span></p>
+<p>EECS 484 Database Management Systems.</p>
+<p class="cv-row"><span><strong>Instructional Aide and Grader, University of Michigan</strong></span><span class="cv-row-detail">2020 – 2022</span></p>
+<p>EECS 545 Machine Learning; SI 671 Data Mining; SIADS 642 Introduction to Deep Learning.</p>
+</section>
+<section aria-labelledby="cv-honors"><h2 id="cv-honors">Honors</h2>
+<p class="cv-row"><span>Evelyn O. Bychinsky Award, University of Michigan</span><span class="cv-row-detail">2022</span></p>
+<p class="cv-row"><span>James B. Angell Scholar, University of Michigan</span><span class="cv-row-detail">2022</span></p>
+<p class="cv-row"><span>Honorable Mention (13th place), ICPC East Central North America Regional</span><span class="cv-row-detail">2021</span></p>
+<p class="cv-row"><span>Silver Medal (8th place), ICPC North Central North America Regional</span><span class="cv-row-detail">2019</span></p>
+</section>
+</div>

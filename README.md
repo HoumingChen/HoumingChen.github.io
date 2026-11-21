@@ -1,3 +1,19 @@
+## Current resume and publication status
+
+The CV page (`/cv-pure.html`) provides a readable web view and a PDF download of the same main academic/research resume. The authoritative source is the neighboring `resume` project, `drafts/research-internship/DB/`; all CV download links use `assets/pdf/Houming_Chen_CV.pdf`. The engineering, computational-social-science, and vision variants are not website resumes.
+
+After updating and exporting that DOCX, synchronize its readable web view and PDF from this repository:
+
+```sh
+python3 tools/sync_resume.py
+```
+
+The CV page reads `_includes/resume-content.html`, generated from that same DB DOCX; the legacy `_data/cv-data.yml` is no longer its content source. The generator preserves the integrated research/citation structure and turns links to this website into relative links for local review. Do not edit the generated HTML independently. Publication status on the homepage is maintained in `_data/publications.yml`. On November 20, 2026, ConStruM was updated to **SIGMOD 2027 (accepted)** and ranking stability to **under revision for PVLDB**, matching the main resume. The undergraduate biography now uses the verified double-major/honors wording. The owner reviewed the local preview and approved these updates for publication on November 20, 2026.
+
+## Local project portfolio
+
+Concise course-project pages are maintained in `_projects/`, with reports and images under `assets/projects/`. See [project-page editing and preview instructions](docs/project-pages.md). The index is at `/projects/`; new pages also appear in the web CV.
+
 The CV part was build by https://github.com/sharu725/online-cv
 
 <div align="right">

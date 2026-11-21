@@ -9,7 +9,8 @@ pin: false
 <div>
   <h4>Unofficial transcripts(pdf)</h4>
   <p><a href="/assets/post_files/transcripts/umich.pdf">Transcript of Houming Chen: University of Michigan - Ann Arbor (2020 Fall - present)</a>
-  GPA3.953/4.000</p>
+  Undergraduate GPA: 3.927/4.000; graduate (Rackham) GPA: 3.908/4.000.</p>
+  <p>Transcript updated November 8, 2026; includes Fall 2026 enrollment.</p>
   <!--
   <p>Grade/GPA Scale: A+(4.0) A(3.5) A-(3.7 ) B+(3.3) B(3.0) B-(2.7) C+(2.3) C(2.0) C-(1.7) D+(1.3) D(1) D-(0.7) E(0.0) |
   <a href="https://lsa.umich.edu/lsa/academics/lsa-requirements/grade-point-average/computing-your-grade-point-average.html">

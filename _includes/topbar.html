@@ -57,6 +57,8 @@
       {% elsif page.collection == 'tabs' %}
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {{- site.data.locales[lang].tabs[tab_key] | default: page.title -}}
+      {% elsif page.layout == 'project' %}
+        {{- page.title -}}
       {% else %}
         {{- page.title | default: site.data.locales[lang].layout[page.layout] | default: page.layout | capitalize -}}
       {% endif %}

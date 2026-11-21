@@ -26,7 +26,11 @@ layout: compress
     <div id="main-wrapper">
       <div id="main">
 
-        {% include refactor-content.html content=content %}
+        {% if page.layout == 'project' %}
+          {{ content }}
+        {% else %}
+          {% include refactor-content.html content=content %}
+        {% endif %}
 
         {% include footer.html %}
 

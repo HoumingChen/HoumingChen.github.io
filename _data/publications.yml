@@ -1,11 +1,11 @@
 - title: "ConStruM: A Structure-Guided LLM Framework for Context-Aware Schema Matching"
   authors: "<strong>Houming Chen</strong>, Zhe Zhang, and H. V. Jagadish"
-  venue: "arXiv:2601.20482, 2026 · Preprint"
+  venue: "SIGMOD 2027 (accepted)"
   url: https://arxiv.org/abs/2601.20482
 
 - title: "The General Stability of Ranking"
   authors: "<strong>Houming Chen</strong> and H. V. Jagadish"
-  venue: "arXiv:2607.01546, 2026 · Preprint"
+  venue: "2026 · Under revision for PVLDB"
   url: https://arxiv.org/abs/2607.01546
 
 - title: "From Research Questions to Columns: Operationalization-Aware Data Discovery"

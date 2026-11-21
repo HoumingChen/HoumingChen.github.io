@@ -1,6 +1,7 @@
 ---
 layout: projects
-title: Research & Projects
+title: Selected Projects
+permalink: /projects/
 icon: fas fa-tag
 order: 3
 ---

@@ -5,7 +5,7 @@
   If the number of TAB files has changed, the following variable is required.
   And it must be defined before `@import`.
 */
-$tab-count: {% if site.hide_blog %}3{% else %}{{ site.tabs | size | plus: 1 }}{% endif %};
+$tab-count: {% if site.hide_blog %}4{% else %}{{ site.tabs | size | plus: 1 }}{% endif %};
 
 @import "{{ site.theme }}";
 
@@ -13,11 +13,12 @@ $tab-count: {% if site.hide_blog %}3{% else %}{{ site.tabs | size | plus: 1 }}{%
 
 .academic-page {
   max-width: 58rem;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 
   .academic-header { margin-bottom: 2rem; }
   h1 { margin-top: 0; margin-bottom: 0.65rem; }
-  h2 { margin-top: 2rem; margin-bottom: 1rem; scroll-margin-top: 5rem; }
+  h2 { padding-top: 0; margin-top: 2rem; margin-bottom: 1rem; scroll-margin-top: 5rem; }
   .academic-role { color: var(--text-muted-color); margin-bottom: 0.8rem; }
   .academic-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
   .publication-list { padding-left: 1.4rem; }
@@ -33,10 +34,122 @@ $tab-count: {% if site.hide_blog %}3{% else %}{{ site.tabs | size | plus: 1 }}{%
   .cv-awards li { margin-bottom: 0.7rem; }
 }
 
+/* The theme offsets div columns, while the academic layout uses main. */
+@media (min-width: 850px) {
+  .academic-page { margin-top: 3rem; }
+}
+
 .topbar-spacer { width: 1.25em; }
 
 @media (max-width: 767px) {
   .academic-page {
     .cv-entry-heading, .cv-awards li { flex-direction: column; gap: 0; }
   }
+}
+
+/* Compact project pages share the existing academic site's typography. */
+.project-detail, .project-list { max-width: 46rem; }
+.project-index-intro { max-width: 40rem; color: var(--text-muted-color); }
+.project-list-entry {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--main-border-color, #dedede);
+}
+.academic-page .project-list-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+}
+.academic-page .project-list-heading h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+.project-list-course, .project-context, .project-kind {
+  color: var(--text-muted-color);
+  font-size: 0.95rem;
+}
+.project-list-entry p { margin: 0.25rem 0 0.65rem; }
+.project-read-more, .project-back, .project-report { font-size: 0.95rem; }
+.project-archive-link { margin-top: 1.5rem; font-size: 0.9rem; }
+.project-back { display: inline-block; margin-bottom: 1.6rem; }
+.project-header { margin-bottom: 1.6rem; }
+.project-header .project-context { margin-bottom: 0.5rem; }
+.academic-page .project-header h1 {
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+.project-kind { margin-bottom: 0.7rem; }
+.project-body { line-height: 1.7; }
+.project-body p { margin-bottom: 1rem; }
+.project-figure, .project-result { margin: 1.6rem 0; }
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.project-figure figcaption, .project-result figcaption {
+  margin-top: 0.6rem;
+  color: var(--text-muted-color);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.project-result table { width: 100%; margin: 0; border-collapse: collapse; }
+.project-result thead { border-bottom: 2px solid var(--main-border-color, #dedede); }
+.project-result tbody tr { border-bottom: 1px solid var(--main-border-color, #dedede); }
+.project-result caption {
+  caption-side: top;
+  padding: 0 0 0.65rem;
+  font-weight: 600;
+  color: inherit;
+}
+.project-result th, .project-result td { padding: 0.65rem 0.8rem; }
+.project-result tbody th { font-weight: 400; }
+.project-result th:last-child, .project-result td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.project-credit {
+  border-top: 1px solid var(--main-border-color, #dedede);
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.academic-page .project-detail a, .academic-page .project-list a, .academic-page .project-archive-link a {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.project-detail a:focus-visible, .project-list a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+@media (max-width: 767px) {
+  .academic-page .project-list-heading { display: block; }
+  .project-back { margin-bottom: 1.2rem; }
+  .project-result th, .project-result td { padding: 0.55rem; }
+}
+
+/* The readable CV and PDF download share the main DB resume source. */
+.cv-actions { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+.cv-content p { margin-bottom: 0.65rem; }
+.cv-content .cv-contact { font-size: 0.95rem; overflow-wrap: anywhere; }
+.cv-content .cv-interests { margin-bottom: 1.4rem; }
+.cv-content .cv-row { display: flex; justify-content: space-between; gap: 0.5rem 1.2rem; }
+.cv-content .cv-row > span:first-child { min-width: 0; }
+.cv-content .cv-row-detail { flex-shrink: 0; white-space: nowrap; }
+.cv-content .cv-appointment { margin-top: 1.5rem; font-style: italic; }
+.academic-page .cv-content .cv-project { margin: 1.3rem 0 0.55rem; padding-top: 0; font-size: 1.1rem; font-weight: 600; line-height: 1.5; }
+.cv-contributions { padding-left: 1.35rem; margin-top: 0.4rem; margin-bottom: 0.8rem; }
+.cv-contributions li { padding-left: 0.1rem; margin-bottom: 0.45rem; }
+.cv-content .cv-citation { margin: 0.7rem 0 1.5rem; font-size: 0.95rem; }
+.cv-content a { text-decoration: underline; text-underline-offset: 0.15em; border-bottom: 0; }
+@media (max-width: 767px) {
+  .cv-content .cv-row { flex-direction: column; gap: 0.15rem; }
+  .cv-content .cv-row-detail { white-space: normal; }
 }

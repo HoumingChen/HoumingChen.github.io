@@ -112,6 +112,9 @@ kramdown:
       start_line: 1
 
 collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
   tabs:
     output: true
     sort_by: order
@@ -156,6 +159,7 @@ compress_html:
     envs: [development]
 
 exclude:
+  - "**/*:Zone.Identifier"
   - '*.gem'
   - '*.gemspec'
   - tools
